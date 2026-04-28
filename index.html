@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -858,14 +859,14 @@ option { background: #1C2840; }
     <div class="hero-greeting">Bonjour 👋</div>
     <div class="hero-title">Bienvenue !</div>
     <div class="hero-loc">📍 Nord Martinique • <span id="tarif-txt">Tarif Jour A</span></div>
-    <div class="tarif-pill" id="tarif-pill">🌞 Tarif A</div>
+    <div class="tarif-pill" id="tarif-pill">🌞 Tarif A: 1,24€/km</div>
   </div>
 
   <div class="tarif-bar">
     <span class="live-dot"></span>
     <div class="tarif-info">
       <div class="t-label">Tarif préfectoral en cours</div>
-      <div class="t-val" id="tarif-live">🌞 Jour — 1,30€/km • Min. 8€</div>
+      <div class="t-val" id="tarif-live">🌞 Tarif A Jour — Prise en charge: 4,48€ + 1,30€/km</div>
     </div>
     <div class="tarif-right">Official<br>2026</div>
   </div>
@@ -891,7 +892,7 @@ option { background: #1C2840; }
         <div class="svc-desc">Nord Caraïbe · Nord Atlantique · Centre · Sud · Tour île complet</div>
         <div class="svc-arrow">›</div>
       </div>
-      <div class="svc-card orange" onclick="alert('💬 WhatsApp : +596 696 039 329\n\nCliquez pour nous écrire !')">
+      <div class="svc-card orange" onclick="window.open('https://wa.me/596696039329?text=🚖 Bonjour Wana-Kera Taxi ! Je souhaite réserver une course.%0A📍 Départ : %0A🏁 Destination : %0A👥 Passagers : %0A📅 Date/Heure : ')">
         <div class="svc-icon">💬</div>
         <div class="svc-name">WhatsApp</div>
         <div class="svc-desc">Contact direct 7j/7</div>
@@ -958,8 +959,8 @@ option { background: #1C2840; }
   </div>
 
   <div class="toggle-bar">
-    <button class="tog-btn on" id="t-jour" onclick="setMode('jour')">🌞 Jour · 1,30€/km</button>
-    <button class="tog-btn" id="t-nuit" onclick="setMode('nuit')">🌙 Nuit · 1,95€/km</button>
+    <button class="tog-btn on" id="t-jour" onclick="setMode('jour')">🌞 Tarif A · 1,24€/km</button>
+    <button class="tog-btn" id="t-nuit" onclick="setMode('nuit')">🌙 Tarif B · 1,69€/km</button>
   </div>
 
   <div class="form-area">
@@ -985,22 +986,24 @@ option { background: #1C2840; }
       <div class="p-left">
         <div class="p-lbl">Estimation de course</div>
         <div class="p-val" id="p-val">8€</div>
-        <div class="p-sub" id="p-sub">Tarif minimum légal</div>
+        <div class="p-sub" id="p-sub">Prix calculé au compteur</div>
       </div>
       <div class="p-right">
         <div class="p-item" id="p-type">🌞 Tarif A — Jour</div>
-        <div class="p-item">Prise en charge: 4,48€</div>
-        <div class="p-item">+ km parcourus</div>
+        <div class="p-item">Prise en charge: 3,09€</div>
+        <div class="p-item">🌞 Tarif A: 1,24€/km</div>
+        <div class="p-item">🌙 Tarif B: 1,69€/km</div>
       </div>
     </div>
 
-    <button class="cta" onclick="alert('🚖 Course commandée !\n\nVotre chauffeur Wana-Kera arrive !\nConfirmation par SMS envoyée.')">
+    <button class="cta" onclick="window.open('https://wa.me/596696039329?text=🚖 Bonjour Wana-Kera Taxi ! Je souhaite réserver une course.')" >
       🚖 Commander ma course
     </button>
     <div class="btn-row">
-      <button class="cta cta-wa" onclick="alert('💬 WhatsApp +596 696 039 329')">💬 WhatsApp</button>
-      <button class="cta cta-tel" onclick="alert('📞 Appel +596 696 039 329')">📞 Appeler</button>
+      <button class="cta cta-wa" onclick="window.open('https://wa.me/596696039329?text=🚖 Bonjour Wana-Kera Taxi !')">💬 WhatsApp</button>
+      <button class="cta cta-tel" onclick="window.open('tel:+596696039329')">📞 Appeler</button>
     </div>
+    <button class="cta" style="background:rgba(66,133,244,0.15);color:#4285F4;border:1px solid rgba(66,133,244,0.2);box-shadow:none;font-size:14px;margin-bottom:8px;" onclick="window.location.href='mailto:wanakeratxi@gmail.com?subject=Réservation Wana-Kera Taxi&body=Bonjour, je souhaite réserver une course.%0ADépart : %0ADestination : %0APassagers : %0ADate/Heure : '">📧 Email</button>
   </div>
   <div class="pad"></div>
 </div>
@@ -1085,10 +1088,10 @@ option { background: #1C2840; }
       </div>
     </div>
 
-    <button class="cta" onclick="alert('✈️ Transfert réservé !\n\nConfirmation SMS envoyée.\nWana-Kera Taxi vous attend à l\'aéroport !')">
+    <button class="cta" onclick="window.open('https://wa.me/596696039329?text=%E2%9C%88%EF%B8%8F%20Bonjour%20Wana-Kera%20Taxi%20!%20Je%20souhaite%20r%C3%A9server%20un%20transfert%20a%C3%A9roport.%0A%F0%9F%93%85%20Date%2FHeure%20%3A%20%0A%F0%9F%91%A5%20Passagers%20%3A%20%0A%F0%9F%A7%B3%20Bagages%20%3A%20%0A%F0%9F%93%8D%20Destination%20%3A%20')">
       ✈️ Réserver ce transfert
     </button>
-    <button class="cta cta-wa" onclick="alert('💬 WhatsApp +596 696 039 329')">💬 Confirmer par WhatsApp</button>
+    <button class="cta cta-wa" onclick="window.open('https://wa.me/596696039329?text=%F0%9F%9A%96%20Bonjour%20Wana-Kera%20Taxi%20!%20Je%20souhaite%20r%C3%A9server%20une%20course.%0A%F0%9F%93%8D%20D%C3%A9part%20%3A%20%0A%F0%9F%8F%81%20Destination%20%3A%20%0A%F0%9F%91%A5%20Passagers%20%3A%20%0A%F0%9F%93%85%20Date%2FHeure%20%3A%20')">💬 Confirmer par WhatsApp</button>
   </div>
   <div class="pad"></div>
 </div>
@@ -1293,11 +1296,11 @@ function tarifAuto() {
   const pill = document.getElementById('tarif-pill');
   const txt = document.getElementById('tarif-txt');
   if (nuit) {
-    live && (live.textContent = '🌙 Nuit — 1,95€/km · +50% · Min. 12€');
+    live && (live.textContent = '🌙 Tarif B Nuit — 1,69€/km · Min. 8€');
     pill && (pill.textContent = '🌙 Tarif B');
     txt && (txt.textContent = 'Tarif Nuit B');
   } else {
-    live && (live.textContent = '🌞 Jour — 1,30€/km · Min. 8€');
+    live && (live.textContent = '🌞 Tarif A: 1,30€/km · 🌙 Tarif B Nuit: +50% · Min. 8€');
     pill && (pill.textContent = '🌞 Tarif A');
     txt && (txt.textContent = 'Tarif Jour A');
   }
@@ -1311,7 +1314,7 @@ function setMode(m) {
   document.getElementById('t-jour').classList.toggle('on', m==='jour');
   document.getElementById('t-nuit').classList.toggle('on', m==='nuit');
   const pt = document.getElementById('p-type');
-  if (pt) pt.textContent = m==='jour' ? '🌞 Tarif A — Jour' : '🌙 Tarif B — Nuit';
+  if (pt) pt.textContent = m==='jour' ? '🌞 Tarif A — 1,24€/km' : '🌙 Tarif B — 1,69€/km';
   calcP();
 }
 
@@ -1323,8 +1326,8 @@ function calcP() {
   if (!pv) return;
   if (!d || !ds) { pv.textContent='8€'; ps && (ps.textContent='Tarif minimum légal'); return; }
   const km = Math.floor(Math.random()*18)+4;
-  const rate = mode==='nuit' ? 1.95 : 1.30;
-  const price = Math.max(mode==='nuit'?12:8, 4.48 + km*rate);
+  const rate = mode==='nuit' ? 1.69 : 1.24;
+  const price = Math.max(8, 3.09 + km*rate);
   pv.textContent = Math.round(price) + '€';
   ps && (ps.textContent = `~${km} km · ${rate}€/km`);
 }
@@ -1336,6 +1339,4073 @@ function selForf(el, p, n) {
   const an = document.getElementById('ap-night');
   if (ap) ap.textContent = p + '€';
   if (an) an.textContent = n + '€';
+}
+
+function commanderCourse() {
+  var dep = document.getElementById('dep') ? document.getElementById('dep').value : '';
+  var dest = document.getElementById('dest') ? document.getElementById('dest').value : '';
+  var pax = document.getElementById('pax') ? document.getElementById('pax').value : '1 passager';
+  var msg = '🚖 Bonjour Wana-Kera Taxi !%0AJe souhaite commander une course.%0A%0A📍 Départ : ' + encodeURIComponent(dep) + '%0A🏁 Destination : ' + encodeURIComponent(dest) + '%0A👥 ' + encodeURIComponent(pax) + '%0A📅 Date/Heure : ';
+  window.open('https://wa.me/596696039329?text=' + msg);
+}
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Wana-Kera Taxi — Martinique</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --or: #E8A020;
+  --or2: #F5B840;
+  --nuit: #0A0F1E;
+  --nuit2: #111827;
+  --nuit3: #1C2840;
+  --vert: #1DB954;
+  --rouge: #E74C3C;
+  --bleu: #2980B9;
+  --blanc: #FFFEF9;
+  --gris: #7A8BA0;
+  --card: #161E30;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: #0A0F1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.phone {
+  width: 390px;
+  height: 844px;
+  background: var(--nuit);
+  border-radius: 48px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 50px 120px rgba(0,0,0,0.8), 0 0 0 2px #1a2540;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* PAGES */
+.page {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--nuit);
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+.page::-webkit-scrollbar { display: none; }
+.page.active { transform: translateX(0); }
+.page.prev { transform: translateX(-30%); }
+
+/* SPLASH */
+#splash {
+  background: radial-gradient(ellipse at 30% 20%, rgba(232,160,32,0.2), transparent 60%),
+              radial-gradient(ellipse at 80% 80%, rgba(29,185,84,0.1), transparent 60%),
+              var(--nuit);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 30px;
+}
+
+.splash-wave {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 200px;
+  background: linear-gradient(to top, rgba(232,160,32,0.05), transparent);
+  border-radius: 60% 60% 0 0;
+}
+
+.logo-wrap {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.logo-emoji {
+  font-size: 80px;
+  display: block;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 10px 30px rgba(232,160,32,0.5));
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+.app-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--blanc);
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.app-name em { color: var(--or); font-style: normal; }
+
+.app-tagline {
+  font-size: 13px;
+  color: var(--gris);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 12px;
+  color: var(--gris);
+}
+
+.badge.gold { border-color: rgba(232,160,32,0.3); color: var(--or2); background: rgba(232,160,32,0.08); }
+
+.splash-cta {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--or), #C87010);
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 30px rgba(232,160,32,0.35);
+  transition: all 0.3s;
+  width: 100%;
+}
+.btn-primary:active { transform: scale(0.97); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--gris);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 14px;
+  border-radius: 18px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.3s;
+  width: 100%;
+}
+.btn-ghost span { color: var(--or); }
+
+/* STATUS BAR */
+.status {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 24px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--blanc);
+  flex-shrink: 0;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 14px;
+  flex-shrink: 0;
+}
+
+.btn-back {
+  width: 40px; height: 40px;
+  background: rgba(255,255,255,0.07);
+  border: none; border-radius: 12px;
+  color: white; font-size: 18px;
+  cursor: pointer; display: flex;
+  align-items: center; justify-content: center;
+}
+
+.h-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--blanc);
+}
+
+.h-icon {
+  width: 40px; height: 40px;
+  background: rgba(232,160,32,0.12);
+  border: none; border-radius: 12px;
+  color: var(--or); font-size: 16px;
+  cursor: pointer; display: flex;
+  align-items: center; justify-content: center;
+}
+
+/* HOME */
+.home-hero {
+  background: linear-gradient(135deg, var(--nuit3), var(--card));
+  margin: 0 16px 16px;
+  border-radius: 24px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.home-hero::before {
+  content: '🌋';
+  position: absolute;
+  right: -5px; top: -5px;
+  font-size: 90px;
+  opacity: 0.07;
+  transform: rotate(10deg);
+}
+
+.hero-greeting { font-size: 13px; color: var(--gris); }
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--blanc);
+  margin-top: 2px;
+}
+
+.hero-loc {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--or2);
+}
+
+.tarif-pill {
+  position: absolute;
+  top: 16px; right: 16px;
+  background: rgba(232,160,32,0.15);
+  border: 1px solid rgba(232,160,32,0.25);
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--or);
+}
+
+.live-dot {
+  width: 8px; height: 8px;
+  background: var(--vert);
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse-dot 1.5s ease-in-out infinite;
+  box-shadow: 0 0 6px var(--vert);
+}
+@keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+/* SERVICES */
+.section { padding: 0 16px 14px; flex-shrink: 0; }
+.sec-title {
+  font-size: 11px;
+  color: var(--gris);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.svc-card {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 20px;
+  padding: 18px 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.svc-card.wide { grid-column: 1/-1; }
+.svc-card:active { transform: scale(0.97); }
+
+.svc-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 20px;
+}
+.svc-card.orange::after { background: linear-gradient(135deg, rgba(232,160,32,0.12), transparent); }
+.svc-card.green::after { background: linear-gradient(135deg, rgba(29,185,84,0.12), transparent); }
+.svc-card.blue::after { background: linear-gradient(135deg, rgba(41,128,185,0.12), transparent); }
+.svc-card:hover::after { opacity: 1; }
+
+.svc-icon {
+  width: 42px; height: 42px;
+  border-radius: 13px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; margin-bottom: 10px;
+}
+.orange .svc-icon { background: rgba(232,160,32,0.15); }
+.green .svc-icon { background: rgba(29,185,84,0.15); }
+.blue .svc-icon { background: rgba(41,128,185,0.15); }
+
+.svc-name { font-size: 13px; font-weight: 600; color: var(--blanc); margin-bottom: 3px; }
+.svc-desc { font-size: 11px; color: var(--gris); line-height: 1.4; }
+.svc-arrow { position: absolute; bottom: 12px; right: 12px; color: var(--gris); font-size: 14px; }
+
+/* TARIF BANNER */
+.tarif-bar {
+  margin: 0 16px 14px;
+  background: linear-gradient(135deg, rgba(232,160,32,0.12), rgba(232,160,32,0.04));
+  border: 1px solid rgba(232,160,32,0.18);
+  border-radius: 16px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.tarif-info .t-label { font-size: 11px; color: var(--gris); }
+.tarif-info .t-val { font-size: 13px; font-weight: 700; color: var(--or); margin-top: 2px; }
+.tarif-right { margin-left: auto; font-size: 11px; color: var(--gris); text-align: right; }
+
+/* BOTTOM NAV */
+.bnav {
+  display: flex;
+  background: var(--nuit2);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding: 10px 0 22px;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.bnav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.bnav-ico { font-size: 20px; opacity: 0.45; transition: 0.2s; }
+.bnav-lbl { font-size: 9px; color: var(--gris); transition: 0.2s; font-weight: 500; }
+.bnav-item.on .bnav-ico { opacity: 1; }
+.bnav-item.on .bnav-lbl { color: var(--or); font-weight: 700; }
+
+.bnav-center {
+  position: relative; top: -18px;
+}
+.bnav-fab {
+  width: 54px; height: 54px;
+  background: linear-gradient(135deg, var(--or), #C87010);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 6px 20px rgba(232,160,32,0.45);
+  border: 3px solid var(--nuit2);
+}
+
+/* COURSE PAGE */
+.map-box {
+  height: 200px;
+  background: linear-gradient(135deg, #080E1A, #101828);
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin: 0 0 0 0;
+}
+
+.map-grid-lines {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(232,160,32,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232,160,32,0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.map-route {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.map-pin-start {
+  position: absolute;
+  width: 12px; height: 12px;
+  background: var(--vert);
+  border-radius: 50%;
+  border: 3px solid white;
+  top: 42%; left: 28%;
+  box-shadow: 0 0 16px rgba(29,185,84,0.7);
+}
+
+.map-pin-end {
+  position: absolute;
+  width: 12px; height: 12px;
+  background: var(--or);
+  border-radius: 50%;
+  border: 3px solid white;
+  top: 55%; right: 22%;
+  box-shadow: 0 0 16px rgba(232,160,32,0.7);
+}
+
+.map-car {
+  position: absolute;
+  font-size: 26px;
+  top: 38%; left: 42%;
+  animation: drive 3s ease-in-out infinite;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
+}
+@keyframes drive { 0%,100%{transform:translate(0,0)} 50%{transform:translate(18px,8px)} }
+
+.map-label-box {
+  position: absolute;
+  bottom: 10px; left: 12px;
+  background: rgba(0,0,0,0.65);
+  border: 1px solid rgba(232,160,32,0.25);
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: var(--or);
+  display: flex; align-items: center; gap: 5px;
+}
+
+/* TOGGLE */
+.toggle-bar {
+  display: flex;
+  background: var(--card);
+  border-radius: 14px;
+  padding: 4px;
+  margin: 14px 16px 12px;
+  border: 1px solid rgba(255,255,255,0.05);
+  flex-shrink: 0;
+}
+
+.tog-btn {
+  flex: 1;
+  padding: 9px;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Outfit', sans-serif;
+  background: transparent;
+  color: var(--gris);
+}
+.tog-btn.on {
+  background: linear-gradient(135deg, var(--or), #C87010);
+  color: white;
+  box-shadow: 0 3px 12px rgba(232,160,32,0.3);
+}
+
+/* FORM */
+.form-area { padding: 0 16px; flex: 1; }
+
+.inp-wrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.inp-ico {
+  position: absolute;
+  left: 14px; top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+}
+
+.inp {
+  width: 100%;
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 13px 13px 13px 42px;
+  font-size: 14px;
+  color: var(--blanc);
+  font-family: 'Outfit', sans-serif;
+  outline: none;
+  transition: all 0.3s;
+}
+.inp:focus { border-color: var(--or); box-shadow: 0 0 0 3px rgba(232,160,32,0.1); }
+.inp::placeholder { color: var(--gris); }
+
+select.inp { appearance: none; cursor: pointer; }
+option { background: #1C2840; }
+
+/* PRICE BOX */
+.price-box {
+  background: linear-gradient(135deg, rgba(232,160,32,0.12), rgba(232,160,32,0.04));
+  border: 1px solid rgba(232,160,32,0.2);
+  border-radius: 16px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.p-left .p-lbl { font-size: 11px; color: var(--gris); margin-bottom: 3px; }
+.p-left .p-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px; font-weight: 700;
+  color: var(--or);
+}
+.p-left .p-sub { font-size: 11px; color: var(--gris); margin-top: 2px; }
+.p-right { text-align: right; }
+.p-right .p-item { font-size: 11px; color: var(--gris); margin-bottom: 3px; }
+
+/* BUTTONS */
+.cta {
+  width: 100%;
+  background: linear-gradient(135deg, var(--or), #C87010);
+  color: white;
+  border: none;
+  padding: 17px;
+  border-radius: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  box-shadow: 0 6px 24px rgba(232,160,32,0.35);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.cta:active { transform: scale(0.98); }
+
+.cta-wa {
+  background: rgba(29,185,84,0.15);
+  color: var(--vert);
+  border: 1px solid rgba(29,185,84,0.2);
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.cta-tel {
+  background: rgba(41,128,185,0.15);
+  color: #5DADE2;
+  border: 1px solid rgba(41,128,185,0.2);
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.btn-row { display: flex; gap: 8px; margin-bottom: 8px; }
+.btn-row .cta { margin-bottom: 0; }
+
+/* FORFAITS */
+.forfait-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-bottom: 12px;
+}
+
+.forf-card {
+  background: var(--card);
+  border: 1.5px solid rgba(255,255,255,0.05);
+  border-radius: 14px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.forf-card.sel {
+  border-color: var(--or);
+  background: rgba(232,160,32,0.08);
+}
+.forf-card:active { transform: scale(0.97); }
+.forf-dest { font-size: 11px; color: var(--gris); margin-bottom: 5px; }
+.forf-price { font-size: 20px; font-weight: 700; color: var(--blanc); }
+.forf-night { font-size: 10px; color: var(--or); margin-top: 3px; }
+
+/* EXCURSIONS */
+.exc-card {
+  background: var(--card);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+.exc-card:active { transform: scale(0.98); }
+
+.exc-img {
+  height: 110px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 55px;
+  position: relative;
+}
+.exc-img-1 { background: linear-gradient(135deg, #1a0800, #3a1800); }
+.exc-img-2 { background: linear-gradient(135deg, #001428, #002848); }
+.exc-img-3 { background: linear-gradient(135deg, #001a0a, #003018); }
+.exc-img-4 { background: linear-gradient(135deg, #1a1000, #382200); }
+.exc-img-5 { background: linear-gradient(135deg, #0a0018, #180030); }
+
+.exc-badge {
+  position: absolute;
+  top: 8px; left: 8px;
+  background: rgba(0,0,0,0.65);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 3px 9px;
+  font-size: 10px;
+  color: var(--blanc);
+}
+
+.exc-body { padding: 12px; }
+.exc-title { font-weight: 700; color: var(--blanc); font-size: 14px; margin-bottom: 5px; }
+.exc-desc { font-size: 11px; color: var(--gris); line-height: 1.5; margin-bottom: 10px; }
+
+.exc-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exc-dur { font-size: 11px; color: var(--gris); }
+.exc-stars { color: var(--or2); font-size: 11px; }
+.exc-price { font-size: 18px; font-weight: 700; color: var(--or); }
+
+/* COMPTE */
+.profile-top {
+  background: linear-gradient(135deg, var(--nuit3), var(--card));
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.avatar-big {
+  width: 72px; height: 72px;
+  background: linear-gradient(135deg, var(--or), var(--or2));
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px;
+  margin: 0 auto 12px;
+  box-shadow: 0 6px 20px rgba(232,160,32,0.3);
+}
+
+.prof-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; font-weight: 700;
+  color: var(--blanc);
+}
+.prof-tel { font-size: 13px; color: var(--gris); margin-top: 3px; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+.stat { background: var(--card); padding: 12px; text-align: center; }
+.stat-n { font-size: 20px; font-weight: 700; color: var(--or); }
+.stat-l { font-size: 10px; color: var(--gris); margin-top: 2px; }
+
+.menu-list { padding: 12px 16px; flex: 1; }
+
+.menu-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.menu-row:hover { padding-left: 5px; }
+
+.menu-ico {
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  background: rgba(232,160,32,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 17px; flex-shrink: 0;
+}
+.menu-ico.red { background: rgba(231,76,60,0.1); }
+
+.menu-txt { flex: 1; }
+.menu-ttl { font-size: 14px; font-weight: 600; color: var(--blanc); }
+.menu-sub { font-size: 11px; color: var(--gris); margin-top: 2px; }
+.menu-arr { color: var(--gris); font-size: 13px; }
+
+/* LANG BAR */
+.lang-bar {
+  display: flex;
+  gap: 7px;
+  padding: 10px 16px 0;
+  flex-shrink: 0;
+}
+.lang-pill {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: var(--gris);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.lang-pill.on { border-color: var(--or); color: var(--or); background: rgba(232,160,32,0.08); }
+
+.pad { height: 20px; flex-shrink: 0; }
+
+/* HISTORY */
+.hist-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.hist-ico {
+  width: 38px; height: 38px;
+  border-radius: 11px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; flex-shrink: 0;
+}
+.hist-info { flex: 1; }
+.hist-ttl { font-size: 13px; font-weight: 600; color: var(--blanc); }
+.hist-date { font-size: 11px; color: var(--gris); margin-top: 2px; }
+.hist-price { font-size: 15px; font-weight: 700; color: var(--or); }
+
+/* NOTIF BANNER */
+.notif {
+  margin: 0 16px 12px;
+  background: rgba(29,185,84,0.1);
+  border: 1px solid rgba(29,185,84,0.2);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: #5DDB84;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.wa-float {
+  position: fixed;
+  bottom: 100px; right: 20px;
+  width: 46px; height: 46px;
+  background: var(--vert);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(29,185,84,0.4);
+  z-index: 10;
+  transition: 0.3s;
+}
+.wa-float:active { transform: scale(1.1); }
+
+.form-lbl {
+  font-size: 11px;
+  color: var(--gris);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
+
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-bottom: 10px; }
+
+.exc-filter {
+  display: flex;
+  gap: 7px;
+  padding: 0 16px 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex-shrink: 0;
+}
+.exc-filter::-webkit-scrollbar { display: none; }
+
+.exc-list { padding: 0 16px; flex: 1; overflow-y: auto; }
+.exc-list::-webkit-scrollbar { display: none; }
+</style>
+</head>
+<body>
+<div class="phone">
+<div class="screen" id="screen">
+
+<!-- SPLASH -->
+<div class="page active" id="splash">
+  <div class="splash-wave"></div>
+  <div class="logo-wrap">
+    <span class="logo-emoji">🚖</span>
+  </div>
+  <div class="app-name">Wana<em>-Kera</em></div>
+  <div class="app-name" style="font-size:30px;color:var(--gris);font-weight:400;margin-top:2px;">Taxi</div>
+  <div class="app-tagline">Martinique • Nord Caraïbe</div>
+  <div class="badges">
+    <span class="badge gold">🌴 Nord Caraïbe</span>
+    <span class="badge">✈️ Aéroport</span>
+    <span class="badge">🌋 Excursions</span>
+  </div>
+  <div class="splash-cta">
+    <button class="btn-primary" onclick="goto('home')">Commencer →</button>
+    <button class="btn-ghost" onclick="goto('home')">Déjà client ? <span>Se connecter</span></button>
+  </div>
+</div>
+
+<!-- HOME -->
+<div class="page" id="home">
+  <div class="status"><span id="clk">09:24</span><span>🔋 87%</span></div>
+
+  <div class="lang-bar">
+    <div class="lang-pill on">🇫🇷 FR</div>
+    <div class="lang-pill">🇬🇧 EN</div>
+    <div class="lang-pill">🇪🇸 ES</div>
+  </div>
+
+  <div class="home-hero" style="margin-top:12px;">
+    <div class="hero-greeting">Bonjour 👋</div>
+    <div class="hero-title">Bienvenue !</div>
+    <div class="hero-loc">📍 Nord Martinique • <span id="tarif-txt">Tarif Jour A</span></div>
+    <div class="tarif-pill" id="tarif-pill">🌞 Tarif A: 1,24€/km</div>
+  </div>
+
+  <div class="tarif-bar">
+    <span class="live-dot"></span>
+    <div class="tarif-info">
+      <div class="t-label">Tarif préfectoral en cours</div>
+      <div class="t-val" id="tarif-live">🌞 Tarif A Jour — Prise en charge: 4,48€ + 1,30€/km</div>
+    </div>
+    <div class="tarif-right">Official<br>2026</div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">Nos Services</div>
+    <div class="service-grid">
+      <div class="svc-card orange" onclick="goto('course')">
+        <div class="svc-icon">🚖</div>
+        <div class="svc-name">Course Classique</div>
+        <div class="svc-desc">GPS temps réel · Devis immédiat</div>
+        <div class="svc-arrow">›</div>
+      </div>
+      <div class="svc-card blue" onclick="goto('airport')">
+        <div class="svc-icon">✈️</div>
+        <div class="svc-name">Aéroport</div>
+        <div class="svc-desc">Forfaits fixes · Aimé Césaire</div>
+        <div class="svc-arrow">›</div>
+      </div>
+      <div class="svc-card green wide" onclick="goto('excursions')">
+        <div class="svc-icon">🌴</div>
+        <div class="svc-name">Excursions & Circuits</div>
+        <div class="svc-desc">Nord Caraïbe · Nord Atlantique · Centre · Sud · Tour île complet</div>
+        <div class="svc-arrow">›</div>
+      </div>
+      <div class="svc-card orange" onclick="window.open('https://wa.me/596696039329?text=🚖 Bonjour Wana-Kera Taxi ! Je souhaite réserver une course.%0A📍 Départ : %0A🏁 Destination : %0A👥 Passagers : %0A📅 Date/Heure : ')">
+        <div class="svc-icon">💬</div>
+        <div class="svc-name">WhatsApp</div>
+        <div class="svc-desc">Contact direct 7j/7</div>
+        <div class="svc-arrow">›</div>
+      </div>
+      <div class="svc-card blue" onclick="goto('account')">
+        <div class="svc-icon">👤</div>
+        <div class="svc-name">Mon Compte</div>
+        <div class="svc-desc">Historique · Factures</div>
+        <div class="svc-arrow">›</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">Dernières courses</div>
+    <div class="hist-item">
+      <div class="hist-ico" style="background:rgba(232,160,32,0.1);">🚖</div>
+      <div class="hist-info">
+        <div class="hist-ttl">Saint-Pierre → Fort-de-France</div>
+        <div class="hist-date">Hier · 14:32 · Tarif Jour</div>
+      </div>
+      <div class="hist-price">38€</div>
+    </div>
+    <div class="hist-item">
+      <div class="hist-ico" style="background:rgba(41,128,185,0.1);">✈️</div>
+      <div class="hist-info">
+        <div class="hist-ttl">Aéroport → Morne-Rouge</div>
+        <div class="hist-date">22/04 · 08:15 · Forfait</div>
+      </div>
+      <div class="hist-price">55€</div>
+    </div>
+  </div>
+
+  <div class="pad"></div>
+
+  <div class="bnav">
+    <div class="bnav-item on" onclick="goto('home')"><div class="bnav-ico">🏠</div><div class="bnav-lbl">Accueil</div></div>
+    <div class="bnav-item" onclick="goto('course')"><div class="bnav-ico">🗺️</div><div class="bnav-lbl">Course</div></div>
+    <div class="bnav-item bnav-center" onclick="goto('course')"><div class="bnav-fab">🚖</div></div>
+    <div class="bnav-item" onclick="goto('excursions')"><div class="bnav-ico">🌴</div><div class="bnav-lbl">Circuits</div></div>
+    <div class="bnav-item" onclick="goto('account')"><div class="bnav-ico">👤</div><div class="bnav-lbl">Compte</div></div>
+  </div>
+</div>
+
+<!-- COURSE CLASSIQUE -->
+<div class="page" id="course">
+  <div class="status"><span>09:24</span><span>🔋 87%</span></div>
+  <div class="header">
+    <button class="btn-back" onclick="goto('home')">←</button>
+    <div class="h-title">Course Classique</div>
+    <button class="h-icon">⋯</button>
+  </div>
+
+  <div class="map-box">
+    <div class="map-grid-lines"></div>
+    <svg style="position:absolute;inset:0;width:100%;height:100%">
+      <path d="M 110 160 Q 195 100 275 135" stroke="rgba(232,160,32,0.35)" stroke-width="3" fill="none" stroke-dasharray="6,4"/>
+    </svg>
+    <div class="map-pin-start"></div>
+    <div class="map-pin-end"></div>
+    <div class="map-car">🚖</div>
+    <div class="map-label-box">📍 GPS Temps Réel · Martinique</div>
+  </div>
+
+  <div class="toggle-bar">
+    <button class="tog-btn on" id="t-jour" onclick="setMode('jour')">🌞 Tarif A · 1,24€/km</button>
+    <button class="tog-btn" id="t-nuit" onclick="setMode('nuit')">🌙 Tarif B · 1,69€/km</button>
+  </div>
+
+  <div class="form-area">
+    <div class="inp-wrap">
+      <span class="inp-ico">🟢</span>
+      <input class="inp" type="text" placeholder="📍 Point de départ" id="dep" oninput="calcP()">
+    </div>
+    <div class="inp-wrap">
+      <span class="inp-ico">🔴</span>
+      <input class="inp" type="text" placeholder="🏁 Destination" id="dest" oninput="calcP()">
+    </div>
+    <div class="inp-wrap">
+      <span class="inp-ico">👥</span>
+      <select class="inp" id="pax">
+        <option>1 passager</option>
+        <option>2 passagers</option>
+        <option>3 passagers</option>
+        <option>4 passagers (+4€)</option>
+      </select>
+    </div>
+
+    <div class="price-box">
+      <div class="p-left">
+        <div class="p-lbl">Estimation de course</div>
+        <div class="p-val" id="p-val">8€</div>
+        <div class="p-sub" id="p-sub">Prix calculé au compteur</div>
+      </div>
+      <div class="p-right">
+        <div class="p-item" id="p-type">🌞 Tarif A — Jour</div>
+        <div class="p-item">Prise en charge: 3,09€</div>
+        <div class="p-item">🌞 Tarif A: 1,24€/km</div>
+        <div class="p-item">🌙 Tarif B: 1,69€/km</div>
+      </div>
+    </div>
+
+    <button class="cta" onclick="window.open('https://wa.me/596696039329?text=🚖 Bonjour Wana-Kera Taxi ! Je souhaite réserver une course.')" >
+      🚖 Commander ma course
+    </button>
+    <div class="btn-row">
+      <button class="cta cta-wa" onclick="window.open('https://wa.me/596696039329?text=🚖 Bonjour Wana-Kera Taxi !')">💬 WhatsApp</button>
+      <button class="cta cta-tel" onclick="window.open('tel:+596696039329')">📞 Appeler</button>
+    </div>
+    <button class="cta" style="background:rgba(66,133,244,0.15);color:#4285F4;border:1px solid rgba(66,133,244,0.2);box-shadow:none;font-size:14px;margin-bottom:8px;" onclick="window.location.href='mailto:wanakeratxi@gmail.com?subject=Réservation Wana-Kera Taxi&body=Bonjour, je souhaite réserver une course.%0ADépart : %0ADestination : %0APassagers : %0ADate/Heure : '">📧 Email</button>
+  </div>
+  <div class="pad"></div>
+</div>
+
+<!-- AÉROPORT -->
+<div class="page" id="airport">
+  <div class="status"><span>09:24</span><span>🔋 87%</span></div>
+  <div class="header">
+    <button class="btn-back" onclick="goto('home')">←</button>
+    <div class="h-title">Transfert Aéroport</div>
+    <button class="h-icon">✈️</button>
+  </div>
+
+  <div class="notif">✅ Tarifs fixes préfectoraux 2026 — Prix garantis !</div>
+
+  <div class="form-area">
+    <div class="form-lbl">Choisissez votre destination</div>
+    <div class="forfait-grid">
+      <div class="forf-card sel" onclick="selForf(this,35,52)">
+        <div class="forf-dest">✈️ → Fort-de-France</div>
+        <div class="forf-price">35€</div>
+        <div class="forf-night">🌙 Nuit: 52€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,45,68)">
+        <div class="forf-dest">✈️ → Schoelcher</div>
+        <div class="forf-price">45€</div>
+        <div class="forf-night">🌙 Nuit: 68€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,55,82)">
+        <div class="forf-dest">✈️ → Nord Caraïbe</div>
+        <div class="forf-price">55€</div>
+        <div class="forf-night">🌙 Nuit: 82€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,25,37)">
+        <div class="forf-dest">✈️ → Lamentin</div>
+        <div class="forf-price">25€</div>
+        <div class="forf-night">🌙 Nuit: 37€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,60,90)">
+        <div class="forf-dest">✈️ → Sainte-Marie</div>
+        <div class="forf-price">60€</div>
+        <div class="forf-night">🌙 Nuit: 90€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,65,98)">
+        <div class="forf-dest">✈️ → Le Robert</div>
+        <div class="forf-price">65€</div>
+        <div class="forf-night">🌙 Nuit: 98€</div>
+      </div>
+    </div>
+
+    <div class="form-lbl">Date & Heure de vol</div>
+    <div class="row2">
+      <input class="inp" type="date" style="padding-left:12px;">
+      <input class="inp" type="time" style="padding-left:12px;" value="09:00">
+    </div>
+
+    <div class="form-lbl">Passagers & Bagages</div>
+    <div class="row2">
+      <select class="inp" style="padding-left:12px;">
+        <option>1 passager</option>
+        <option>2 passagers</option>
+        <option>3 passagers</option>
+        <option>4 passagers</option>
+      </select>
+      <select class="inp" style="padding-left:12px;">
+        <option>0 bagage</option>
+        <option>1 bagage</option>
+        <option>2 bagages</option>
+        <option>3+ bagages</option>
+      </select>
+    </div>
+
+    <div class="price-box">
+      <div class="p-left">
+        <div class="p-lbl">Forfait sélectionné</div>
+        <div class="p-val" id="ap-price">35€</div>
+        <div class="p-sub">Prix fixe garanti</div>
+      </div>
+      <div class="p-right">
+        <div class="p-item">🌙 Nuit/Férié</div>
+        <div style="font-size:18px;font-weight:700;color:var(--gris);" id="ap-night">52€</div>
+      </div>
+    </div>
+
+    <button class="cta" onclick="window.open('https://wa.me/596696039329?text=%E2%9C%88%EF%B8%8F%20Bonjour%20Wana-Kera%20Taxi%20!%20Je%20souhaite%20r%C3%A9server%20un%20transfert%20a%C3%A9roport.%0A%F0%9F%93%85%20Date%2FHeure%20%3A%20%0A%F0%9F%91%A5%20Passagers%20%3A%20%0A%F0%9F%A7%B3%20Bagages%20%3A%20%0A%F0%9F%93%8D%20Destination%20%3A%20')">
+      ✈️ Réserver ce transfert
+    </button>
+    <button class="cta cta-wa" onclick="window.open('https://wa.me/596696039329?text=%F0%9F%9A%96%20Bonjour%20Wana-Kera%20Taxi%20!%20Je%20souhaite%20r%C3%A9server%20une%20course.%0A%F0%9F%93%8D%20D%C3%A9part%20%3A%20%0A%F0%9F%8F%81%20Destination%20%3A%20%0A%F0%9F%91%A5%20Passagers%20%3A%20%0A%F0%9F%93%85%20Date%2FHeure%20%3A%20')">💬 Confirmer par WhatsApp</button>
+  </div>
+  <div class="pad"></div>
+</div>
+
+<!-- EXCURSIONS -->
+<div class="page" id="excursions">
+  <div class="status"><span>09:24</span><span>🔋 87%</span></div>
+  <div class="header">
+    <button class="btn-back" onclick="goto('home')">←</button>
+    <div class="h-title">Excursions & Circuits</div>
+    <button class="h-icon">🔍</button>
+  </div>
+
+  <div class="exc-filter">
+    <div class="lang-pill on">Tous</div>
+    <div class="lang-pill">🌋 Nord Caraïbe</div>
+    <div class="lang-pill">🌊 Nord Atlantique</div>
+    <div class="lang-pill">🏙️ Centre</div>
+    <div class="lang-pill">🏖️ Sud</div>
+    <div class="lang-pill">🗺️ Tour île</div>
+  </div>
+
+  <div class="exc-list">
+
+    <div class="exc-card" onclick="alert('🌋 Réservation confirmée !\n\nMontagne Pelée & Saint-Pierre\n120€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-1">🌋<div class="exc-badge">🌋 Nord Caraïbe</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Montagne Pelée & Saint-Pierre</div>
+        <div class="exc-desc">Ruines volcaniques, Musée du Volcan, distilleries historiques. Une plongée dans l'histoire de la Martinique.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Demi-journée · 4h</div><div class="exc-stars">★★★★★ (48)</div></div>
+          <div class="exc-price">120€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🌊 Réservation confirmée !\n\nNord Sauvage · Grand-Rivière\n180€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-2">🌊<div class="exc-badge">🌊 Nord Atlantique</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Grand-Rivière & Anse Couleuvre</div>
+        <div class="exc-desc">Le bout du monde martiniquais. Falaises, mer turquoise, végétation tropicale luxuriante et villages de pêcheurs.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Journée · 8h</div><div class="exc-stars">★★★★★ (32)</div></div>
+          <div class="exc-price">180€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🏙️ Réservation confirmée !\n\nFort-de-France & Balata\n120€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-3">🏙️<div class="exc-badge">🏙️ Centre</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Fort-de-France & Jardin de Balata</div>
+        <div class="exc-desc">La Savane, Bibliothèque Schoelcher, marché couvert, et le magnifique jardin botanique de Balata.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Demi-journée · 5h</div><div class="exc-stars">★★★★☆ (55)</div></div>
+          <div class="exc-price">120€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🏖️ Réservation confirmée !\n\nPlages du Sud\n200€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-4">🏖️<div class="exc-badge">🏖️ Sud Martinique</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Les Salines & Rocher du Diamant</div>
+        <div class="exc-desc">Les plus belles plages de la Caraïbe. Sable blanc immaculé, eaux cristallines turquoise et vue sur le Diamant.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Journée · 8h</div><div class="exc-stars">★★★★★ (71)</div></div>
+          <div class="exc-price">200€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🗺️ Grand Tour réservé !\n\nTour complet de la Martinique\n350€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-5">🗺️<div class="exc-badge">⭐ Tour Complet</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Grand Tour de la Martinique</div>
+        <div class="exc-desc">Nord Caraïbe + Centre + Sud en une journée inoubliable. Le meilleur de l'île avec votre guide Wana-Kera.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Journée complète · 10h</div><div class="exc-stars">★★★★★ (19)</div></div>
+          <div class="exc-price">350€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🎯 Demande envoyée !\n\nNous vous contacterons sous 2h\npour créer votre circuit sur mesure.')">
+      <div class="exc-img" style="background:linear-gradient(135deg,#0a001a,#180035);">🎯<div class="exc-badge">✨ Sur Mesure</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Circuit Personnalisé</div>
+        <div class="exc-desc">Vous choisissez vos sites, votre durée, votre groupe. Devis gratuit sous 2h par WhatsApp.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ À définir ensemble</div><div class="exc-stars">⭐ Sur devis</div></div>
+          <div class="exc-price" style="font-size:14px;">Devis →</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pad"></div>
+  </div>
+</div>
+
+<!-- COMPTE -->
+<div class="page" id="account">
+  <div class="status"><span>09:24</span><span>🔋 87%</span></div>
+  <div class="header">
+    <button class="btn-back" onclick="goto('home')">←</button>
+    <div class="h-title">Mon Compte</div>
+    <button class="h-icon">✏️</button>
+  </div>
+
+  <div class="profile-top">
+    <div class="avatar-big">👤</div>
+    <div class="prof-name">Mon Profil</div>
+    <div class="prof-tel">+596 6XX XX XX XX</div>
+    <div class="stats">
+      <div class="stat"><div class="stat-n">12</div><div class="stat-l">Courses</div></div>
+      <div class="stat"><div class="stat-n">3</div><div class="stat-l">Excursions</div></div>
+      <div class="stat"><div class="stat-n">4.9⭐</div><div class="stat-l">Note</div></div>
+    </div>
+  </div>
+
+  <div class="menu-list">
+    <div class="menu-row" onclick="alert('📋 Historique de vos 12 courses')">
+      <div class="menu-ico">📋</div>
+      <div class="menu-txt"><div class="menu-ttl">Historique des courses</div><div class="menu-sub">12 courses · 3 excursions</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('🧾 Factures téléchargeables en PDF')">
+      <div class="menu-ico">🧾</div>
+      <div class="menu-txt"><div class="menu-ttl">Mes factures</div><div class="menu-sub">Télécharger en PDF</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('💳 CB · PayPal · Espèces')">
+      <div class="menu-ico">💳</div>
+      <div class="menu-txt"><div class="menu-ttl">Paiement</div><div class="menu-sub">CB · PayPal · Espèces</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('🌍 Français · English · Español')">
+      <div class="menu-ico">🌍</div>
+      <div class="menu-txt"><div class="menu-ttl">Langue</div><div class="menu-sub">Français · English · Español</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('📞 +596 696 039 329\n💬 WhatsApp disponible 7j/7\n📧 contact@wanakera.mq')">
+      <div class="menu-ico">📞</div>
+      <div class="menu-txt"><div class="menu-ttl">Nous contacter</div><div class="menu-sub">Tél · WhatsApp · Email</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('📜 Conditions générales\nPolitique de confidentialité\nLicence Taxi — Préfecture Martinique')">
+      <div class="menu-ico">📜</div>
+      <div class="menu-txt"><div class="menu-ttl">CGV & Confidentialité</div><div class="menu-sub">Licence taxi · Préfecture</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('🚨 URGENCES\n15 · SAMU\n17 · Police\n18 · Pompiers\n\nWana-Kera: +596 696 039 329')">
+      <div class="menu-ico red">🚨</div>
+      <div class="menu-txt"><div class="menu-ttl" style="color:var(--rouge)">Urgences</div><div class="menu-sub">15 · 17 · 18</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+  </div>
+
+  <div style="padding:0 16px 20px;">
+    <div style="background:linear-gradient(135deg,rgba(232,160,32,0.08),rgba(232,160,32,0.03));border:1px solid rgba(232,160,32,0.15);border-radius:16px;padding:16px;text-align:center;">
+      <div style="font-size:22px;margin-bottom:6px;">🏝️</div>
+      <div style="font-size:13px;font-weight:700;color:var(--blanc);">Wana-Kera Taxi</div>
+      <div style="font-size:11px;color:var(--gris);margin-top:4px;">Martinique · Nord Caraïbe · Depuis 2026</div>
+      <div style="font-size:11px;color:var(--or);margin-top:3px;">Licence Taxi — Préfecture de Martinique</div>
+    </div>
+  </div>
+</div>
+
+</div><!-- screen -->
+</div><!-- phone -->
+
+<script>
+let cur = 'splash';
+
+function goto(id) {
+  const prev = document.getElementById(cur);
+  const next = document.getElementById(id);
+  if (cur === id) return;
+  prev.classList.add('prev');
+  next.classList.add('active');
+  setTimeout(() => {
+    prev.classList.remove('active','prev');
+  }, 350);
+  cur = id;
+  next.scrollTop = 0;
+}
+
+// Clock
+function tick() {
+  const t = new Date().toTimeString().slice(0,5);
+  document.querySelectorAll('.status span:first-child').forEach(e => e.textContent = t);
+  document.getElementById('clk') && (document.getElementById('clk').textContent = t);
+}
+tick();
+setInterval(tick, 30000);
+
+// Tarif auto
+function tarifAuto() {
+  const h = new Date().getHours();
+  const nuit = h >= 19 || h < 7;
+  const live = document.getElementById('tarif-live');
+  const pill = document.getElementById('tarif-pill');
+  const txt = document.getElementById('tarif-txt');
+  if (nuit) {
+    live && (live.textContent = '🌙 Tarif B Nuit — 1,69€/km · Min. 8€');
+    pill && (pill.textContent = '🌙 Tarif B');
+    txt && (txt.textContent = 'Tarif Nuit B');
+  } else {
+    live && (live.textContent = '🌞 Tarif A: 1,30€/km · 🌙 Tarif B Nuit: +50% · Min. 8€');
+    pill && (pill.textContent = '🌞 Tarif A');
+    txt && (txt.textContent = 'Tarif Jour A');
+  }
+}
+tarifAuto();
+
+// Mode tarif
+let mode = 'jour';
+function setMode(m) {
+  mode = m;
+  document.getElementById('t-jour').classList.toggle('on', m==='jour');
+  document.getElementById('t-nuit').classList.toggle('on', m==='nuit');
+  const pt = document.getElementById('p-type');
+  if (pt) pt.textContent = m==='jour' ? '🌞 Tarif A — 1,24€/km' : '🌙 Tarif B — 1,69€/km';
+  calcP();
+}
+
+function calcP() {
+  const d = document.getElementById('dep')?.value;
+  const ds = document.getElementById('dest')?.value;
+  const pv = document.getElementById('p-val');
+  const ps = document.getElementById('p-sub');
+  if (!pv) return;
+  if (!d || !ds) { pv.textContent='8€'; ps && (ps.textContent='Tarif minimum légal'); return; }
+  const km = Math.floor(Math.random()*18)+4;
+  const rate = mode==='nuit' ? 1.69 : 1.24;
+  const price = Math.max(8, 3.09 + km*rate);
+  pv.textContent = Math.round(price) + '€';
+  ps && (ps.textContent = `~${km} km · ${rate}€/km`);
+}
+
+function selForf(el, p, n) {
+  document.querySelectorAll('.forf-card').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  const ap = document.getElementById('ap-price');
+  const an = document.getElementById('ap-night');
+  if (ap) ap.textContent = p + '€';
+  if (an) an.textContent = n + '€';
+}
+
+function commanderCourse() {
+  var dep = document.getElementById('dep') ? document.getElementById('dep').value : '';
+  var dest = document.getElementById('dest') ? document.getElementById('dest').value : '';
+  var pax = document.getElementById('pax') ? document.getElementById('pax').value : '1 passager';
+  var msg = '🚖 Bonjour Wana-Kera Taxi !%0AJe souhaite commander une course.%0A%0A📍 Départ : ' + encodeURIComponent(dep) + '%0A🏁 Destination : ' + encodeURIComponent(dest) + '%0A👥 ' + encodeURIComponent(pax) + '%0A📅 Date/Heure : ';
+  window.open('https://wa.me/596696039329?text=' + msg);
+}
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Wana-Kera Taxi — Martinique</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --or: #E8A020;
+  --or2: #F5B840;
+  --nuit: #0A0F1E;
+  --nuit2: #111827;
+  --nuit3: #1C2840;
+  --vert: #1DB954;
+  --rouge: #E74C3C;
+  --bleu: #2980B9;
+  --blanc: #FFFEF9;
+  --gris: #7A8BA0;
+  --card: #161E30;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: #0A0F1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.phone {
+  width: 390px;
+  height: 844px;
+  background: var(--nuit);
+  border-radius: 48px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 50px 120px rgba(0,0,0,0.8), 0 0 0 2px #1a2540;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* PAGES */
+.page {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--nuit);
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+.page::-webkit-scrollbar { display: none; }
+.page.active { transform: translateX(0); }
+.page.prev { transform: translateX(-30%); }
+
+/* SPLASH */
+#splash {
+  background: radial-gradient(ellipse at 30% 20%, rgba(232,160,32,0.2), transparent 60%),
+              radial-gradient(ellipse at 80% 80%, rgba(29,185,84,0.1), transparent 60%),
+              var(--nuit);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 30px;
+}
+
+.splash-wave {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 200px;
+  background: linear-gradient(to top, rgba(232,160,32,0.05), transparent);
+  border-radius: 60% 60% 0 0;
+}
+
+.logo-wrap {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.logo-emoji {
+  font-size: 80px;
+  display: block;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 10px 30px rgba(232,160,32,0.5));
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+.app-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--blanc);
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.app-name em { color: var(--or); font-style: normal; }
+
+.app-tagline {
+  font-size: 13px;
+  color: var(--gris);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 12px;
+  color: var(--gris);
+}
+
+.badge.gold { border-color: rgba(232,160,32,0.3); color: var(--or2); background: rgba(232,160,32,0.08); }
+
+.splash-cta {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--or), #C87010);
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 30px rgba(232,160,32,0.35);
+  transition: all 0.3s;
+  width: 100%;
+}
+.btn-primary:active { transform: scale(0.97); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--gris);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 14px;
+  border-radius: 18px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.3s;
+  width: 100%;
+}
+.btn-ghost span { color: var(--or); }
+
+/* STATUS BAR */
+.status {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 24px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--blanc);
+  flex-shrink: 0;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 14px;
+  flex-shrink: 0;
+}
+
+.btn-back {
+  width: 40px; height: 40px;
+  background: rgba(255,255,255,0.07);
+  border: none; border-radius: 12px;
+  color: white; font-size: 18px;
+  cursor: pointer; display: flex;
+  align-items: center; justify-content: center;
+}
+
+.h-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--blanc);
+}
+
+.h-icon {
+  width: 40px; height: 40px;
+  background: rgba(232,160,32,0.12);
+  border: none; border-radius: 12px;
+  color: var(--or); font-size: 16px;
+  cursor: pointer; display: flex;
+  align-items: center; justify-content: center;
+}
+
+/* HOME */
+.home-hero {
+  background: linear-gradient(135deg, var(--nuit3), var(--card));
+  margin: 0 16px 16px;
+  border-radius: 24px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.home-hero::before {
+  content: '🌋';
+  position: absolute;
+  right: -5px; top: -5px;
+  font-size: 90px;
+  opacity: 0.07;
+  transform: rotate(10deg);
+}
+
+.hero-greeting { font-size: 13px; color: var(--gris); }
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--blanc);
+  margin-top: 2px;
+}
+
+.hero-loc {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--or2);
+}
+
+.tarif-pill {
+  position: absolute;
+  top: 16px; right: 16px;
+  background: rgba(232,160,32,0.15);
+  border: 1px solid rgba(232,160,32,0.25);
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--or);
+}
+
+.live-dot {
+  width: 8px; height: 8px;
+  background: var(--vert);
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse-dot 1.5s ease-in-out infinite;
+  box-shadow: 0 0 6px var(--vert);
+}
+@keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+/* SERVICES */
+.section { padding: 0 16px 14px; flex-shrink: 0; }
+.sec-title {
+  font-size: 11px;
+  color: var(--gris);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.svc-card {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 20px;
+  padding: 18px 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.svc-card.wide { grid-column: 1/-1; }
+.svc-card:active { transform: scale(0.97); }
+
+.svc-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 20px;
+}
+.svc-card.orange::after { background: linear-gradient(135deg, rgba(232,160,32,0.12), transparent); }
+.svc-card.green::after { background: linear-gradient(135deg, rgba(29,185,84,0.12), transparent); }
+.svc-card.blue::after { background: linear-gradient(135deg, rgba(41,128,185,0.12), transparent); }
+.svc-card:hover::after { opacity: 1; }
+
+.svc-icon {
+  width: 42px; height: 42px;
+  border-radius: 13px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; margin-bottom: 10px;
+}
+.orange .svc-icon { background: rgba(232,160,32,0.15); }
+.green .svc-icon { background: rgba(29,185,84,0.15); }
+.blue .svc-icon { background: rgba(41,128,185,0.15); }
+
+.svc-name { font-size: 13px; font-weight: 600; color: var(--blanc); margin-bottom: 3px; }
+.svc-desc { font-size: 11px; color: var(--gris); line-height: 1.4; }
+.svc-arrow { position: absolute; bottom: 12px; right: 12px; color: var(--gris); font-size: 14px; }
+
+/* TARIF BANNER */
+.tarif-bar {
+  margin: 0 16px 14px;
+  background: linear-gradient(135deg, rgba(232,160,32,0.12), rgba(232,160,32,0.04));
+  border: 1px solid rgba(232,160,32,0.18);
+  border-radius: 16px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.tarif-info .t-label { font-size: 11px; color: var(--gris); }
+.tarif-info .t-val { font-size: 13px; font-weight: 700; color: var(--or); margin-top: 2px; }
+.tarif-right { margin-left: auto; font-size: 11px; color: var(--gris); text-align: right; }
+
+/* BOTTOM NAV */
+.bnav {
+  display: flex;
+  background: var(--nuit2);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding: 10px 0 22px;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.bnav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.bnav-ico { font-size: 20px; opacity: 0.45; transition: 0.2s; }
+.bnav-lbl { font-size: 9px; color: var(--gris); transition: 0.2s; font-weight: 500; }
+.bnav-item.on .bnav-ico { opacity: 1; }
+.bnav-item.on .bnav-lbl { color: var(--or); font-weight: 700; }
+
+.bnav-center {
+  position: relative; top: -18px;
+}
+.bnav-fab {
+  width: 54px; height: 54px;
+  background: linear-gradient(135deg, var(--or), #C87010);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 6px 20px rgba(232,160,32,0.45);
+  border: 3px solid var(--nuit2);
+}
+
+/* COURSE PAGE */
+.map-box {
+  height: 200px;
+  background: linear-gradient(135deg, #080E1A, #101828);
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin: 0 0 0 0;
+}
+
+.map-grid-lines {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(232,160,32,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232,160,32,0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.map-route {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.map-pin-start {
+  position: absolute;
+  width: 12px; height: 12px;
+  background: var(--vert);
+  border-radius: 50%;
+  border: 3px solid white;
+  top: 42%; left: 28%;
+  box-shadow: 0 0 16px rgba(29,185,84,0.7);
+}
+
+.map-pin-end {
+  position: absolute;
+  width: 12px; height: 12px;
+  background: var(--or);
+  border-radius: 50%;
+  border: 3px solid white;
+  top: 55%; right: 22%;
+  box-shadow: 0 0 16px rgba(232,160,32,0.7);
+}
+
+.map-car {
+  position: absolute;
+  font-size: 26px;
+  top: 38%; left: 42%;
+  animation: drive 3s ease-in-out infinite;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
+}
+@keyframes drive { 0%,100%{transform:translate(0,0)} 50%{transform:translate(18px,8px)} }
+
+.map-label-box {
+  position: absolute;
+  bottom: 10px; left: 12px;
+  background: rgba(0,0,0,0.65);
+  border: 1px solid rgba(232,160,32,0.25);
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: var(--or);
+  display: flex; align-items: center; gap: 5px;
+}
+
+/* TOGGLE */
+.toggle-bar {
+  display: flex;
+  background: var(--card);
+  border-radius: 14px;
+  padding: 4px;
+  margin: 14px 16px 12px;
+  border: 1px solid rgba(255,255,255,0.05);
+  flex-shrink: 0;
+}
+
+.tog-btn {
+  flex: 1;
+  padding: 9px;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Outfit', sans-serif;
+  background: transparent;
+  color: var(--gris);
+}
+.tog-btn.on {
+  background: linear-gradient(135deg, var(--or), #C87010);
+  color: white;
+  box-shadow: 0 3px 12px rgba(232,160,32,0.3);
+}
+
+/* FORM */
+.form-area { padding: 0 16px; flex: 1; }
+
+.inp-wrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.inp-ico {
+  position: absolute;
+  left: 14px; top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+}
+
+.inp {
+  width: 100%;
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 13px 13px 13px 42px;
+  font-size: 14px;
+  color: var(--blanc);
+  font-family: 'Outfit', sans-serif;
+  outline: none;
+  transition: all 0.3s;
+}
+.inp:focus { border-color: var(--or); box-shadow: 0 0 0 3px rgba(232,160,32,0.1); }
+.inp::placeholder { color: var(--gris); }
+
+select.inp { appearance: none; cursor: pointer; }
+option { background: #1C2840; }
+
+/* PRICE BOX */
+.price-box {
+  background: linear-gradient(135deg, rgba(232,160,32,0.12), rgba(232,160,32,0.04));
+  border: 1px solid rgba(232,160,32,0.2);
+  border-radius: 16px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.p-left .p-lbl { font-size: 11px; color: var(--gris); margin-bottom: 3px; }
+.p-left .p-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px; font-weight: 700;
+  color: var(--or);
+}
+.p-left .p-sub { font-size: 11px; color: var(--gris); margin-top: 2px; }
+.p-right { text-align: right; }
+.p-right .p-item { font-size: 11px; color: var(--gris); margin-bottom: 3px; }
+
+/* BUTTONS */
+.cta {
+  width: 100%;
+  background: linear-gradient(135deg, var(--or), #C87010);
+  color: white;
+  border: none;
+  padding: 17px;
+  border-radius: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  box-shadow: 0 6px 24px rgba(232,160,32,0.35);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.cta:active { transform: scale(0.98); }
+
+.cta-wa {
+  background: rgba(29,185,84,0.15);
+  color: var(--vert);
+  border: 1px solid rgba(29,185,84,0.2);
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.cta-tel {
+  background: rgba(41,128,185,0.15);
+  color: #5DADE2;
+  border: 1px solid rgba(41,128,185,0.2);
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.btn-row { display: flex; gap: 8px; margin-bottom: 8px; }
+.btn-row .cta { margin-bottom: 0; }
+
+/* FORFAITS */
+.forfait-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-bottom: 12px;
+}
+
+.forf-card {
+  background: var(--card);
+  border: 1.5px solid rgba(255,255,255,0.05);
+  border-radius: 14px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.forf-card.sel {
+  border-color: var(--or);
+  background: rgba(232,160,32,0.08);
+}
+.forf-card:active { transform: scale(0.97); }
+.forf-dest { font-size: 11px; color: var(--gris); margin-bottom: 5px; }
+.forf-price { font-size: 20px; font-weight: 700; color: var(--blanc); }
+.forf-night { font-size: 10px; color: var(--or); margin-top: 3px; }
+
+/* EXCURSIONS */
+.exc-card {
+  background: var(--card);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+.exc-card:active { transform: scale(0.98); }
+
+.exc-img {
+  height: 110px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 55px;
+  position: relative;
+}
+.exc-img-1 { background: linear-gradient(135deg, #1a0800, #3a1800); }
+.exc-img-2 { background: linear-gradient(135deg, #001428, #002848); }
+.exc-img-3 { background: linear-gradient(135deg, #001a0a, #003018); }
+.exc-img-4 { background: linear-gradient(135deg, #1a1000, #382200); }
+.exc-img-5 { background: linear-gradient(135deg, #0a0018, #180030); }
+
+.exc-badge {
+  position: absolute;
+  top: 8px; left: 8px;
+  background: rgba(0,0,0,0.65);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 3px 9px;
+  font-size: 10px;
+  color: var(--blanc);
+}
+
+.exc-body { padding: 12px; }
+.exc-title { font-weight: 700; color: var(--blanc); font-size: 14px; margin-bottom: 5px; }
+.exc-desc { font-size: 11px; color: var(--gris); line-height: 1.5; margin-bottom: 10px; }
+
+.exc-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exc-dur { font-size: 11px; color: var(--gris); }
+.exc-stars { color: var(--or2); font-size: 11px; }
+.exc-price { font-size: 18px; font-weight: 700; color: var(--or); }
+
+/* COMPTE */
+.profile-top {
+  background: linear-gradient(135deg, var(--nuit3), var(--card));
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.avatar-big {
+  width: 72px; height: 72px;
+  background: linear-gradient(135deg, var(--or), var(--or2));
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px;
+  margin: 0 auto 12px;
+  box-shadow: 0 6px 20px rgba(232,160,32,0.3);
+}
+
+.prof-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; font-weight: 700;
+  color: var(--blanc);
+}
+.prof-tel { font-size: 13px; color: var(--gris); margin-top: 3px; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+.stat { background: var(--card); padding: 12px; text-align: center; }
+.stat-n { font-size: 20px; font-weight: 700; color: var(--or); }
+.stat-l { font-size: 10px; color: var(--gris); margin-top: 2px; }
+
+.menu-list { padding: 12px 16px; flex: 1; }
+
+.menu-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.menu-row:hover { padding-left: 5px; }
+
+.menu-ico {
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  background: rgba(232,160,32,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 17px; flex-shrink: 0;
+}
+.menu-ico.red { background: rgba(231,76,60,0.1); }
+
+.menu-txt { flex: 1; }
+.menu-ttl { font-size: 14px; font-weight: 600; color: var(--blanc); }
+.menu-sub { font-size: 11px; color: var(--gris); margin-top: 2px; }
+.menu-arr { color: var(--gris); font-size: 13px; }
+
+/* LANG BAR */
+.lang-bar {
+  display: flex;
+  gap: 7px;
+  padding: 10px 16px 0;
+  flex-shrink: 0;
+}
+.lang-pill {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: var(--gris);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.lang-pill.on { border-color: var(--or); color: var(--or); background: rgba(232,160,32,0.08); }
+
+.pad { height: 20px; flex-shrink: 0; }
+
+/* HISTORY */
+.hist-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.hist-ico {
+  width: 38px; height: 38px;
+  border-radius: 11px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; flex-shrink: 0;
+}
+.hist-info { flex: 1; }
+.hist-ttl { font-size: 13px; font-weight: 600; color: var(--blanc); }
+.hist-date { font-size: 11px; color: var(--gris); margin-top: 2px; }
+.hist-price { font-size: 15px; font-weight: 700; color: var(--or); }
+
+/* NOTIF BANNER */
+.notif {
+  margin: 0 16px 12px;
+  background: rgba(29,185,84,0.1);
+  border: 1px solid rgba(29,185,84,0.2);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: #5DDB84;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.wa-float {
+  position: fixed;
+  bottom: 100px; right: 20px;
+  width: 46px; height: 46px;
+  background: var(--vert);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(29,185,84,0.4);
+  z-index: 10;
+  transition: 0.3s;
+}
+.wa-float:active { transform: scale(1.1); }
+
+.form-lbl {
+  font-size: 11px;
+  color: var(--gris);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
+
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-bottom: 10px; }
+
+.exc-filter {
+  display: flex;
+  gap: 7px;
+  padding: 0 16px 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex-shrink: 0;
+}
+.exc-filter::-webkit-scrollbar { display: none; }
+
+.exc-list { padding: 0 16px; flex: 1; overflow-y: auto; }
+.exc-list::-webkit-scrollbar { display: none; }
+</style>
+</head>
+<body>
+<div class="phone">
+<div class="screen" id="screen">
+
+<!-- SPLASH -->
+<div class="page active" id="splash">
+  <div class="splash-wave"></div>
+  <div class="logo-wrap">
+    <span class="logo-emoji">🚖</span>
+  </div>
+  <div class="app-name">Wana<em>-Kera</em></div>
+  <div class="app-name" style="font-size:30px;color:var(--gris);font-weight:400;margin-top:2px;">Taxi</div>
+  <div class="app-tagline">Martinique • Nord Caraïbe</div>
+  <div class="badges">
+    <span class="badge gold">🌴 Nord Caraïbe</span>
+    <span class="badge">✈️ Aéroport</span>
+    <span class="badge">🌋 Excursions</span>
+  </div>
+  <div class="splash-cta">
+    <button class="btn-primary" onclick="goto('home')">Commencer →</button>
+    <button class="btn-ghost" onclick="goto('home')">Déjà client ? <span>Se connecter</span></button>
+  </div>
+</div>
+
+<!-- HOME -->
+<div class="page" id="home">
+  <div class="status"><span id="clk">09:24</span><span>🔋 87%</span></div>
+
+  <div class="lang-bar">
+    <div class="lang-pill on">🇫🇷 FR</div>
+    <div class="lang-pill">🇬🇧 EN</div>
+    <div class="lang-pill">🇪🇸 ES</div>
+  </div>
+
+  <div class="home-hero" style="margin-top:12px;">
+    <div class="hero-greeting">Bonjour 👋</div>
+    <div class="hero-title">Bienvenue !</div>
+    <div class="hero-loc">📍 Nord Martinique • <span id="tarif-txt">Tarif Jour A</span></div>
+    <div class="tarif-pill" id="tarif-pill">🌞 Tarif A: 1,24€/km</div>
+  </div>
+
+  <div class="tarif-bar">
+    <span class="live-dot"></span>
+    <div class="tarif-info">
+      <div class="t-label">Tarif préfectoral en cours</div>
+      <div class="t-val" id="tarif-live">🌞 Tarif A Jour — Prise en charge: 4,48€ + 1,30€/km</div>
+    </div>
+    <div class="tarif-right">Official<br>2026</div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">Nos Services</div>
+    <div class="service-grid">
+      <div class="svc-card orange" onclick="goto('course')">
+        <div class="svc-icon">🚖</div>
+        <div class="svc-name">Course Classique</div>
+        <div class="svc-desc">GPS temps réel · Devis immédiat</div>
+        <div class="svc-arrow">›</div>
+      </div>
+      <div class="svc-card blue" onclick="goto('airport')">
+        <div class="svc-icon">✈️</div>
+        <div class="svc-name">Aéroport</div>
+        <div class="svc-desc">Forfaits fixes · Aimé Césaire</div>
+        <div class="svc-arrow">›</div>
+      </div>
+      <div class="svc-card green wide" onclick="goto('excursions')">
+        <div class="svc-icon">🌴</div>
+        <div class="svc-name">Excursions & Circuits</div>
+        <div class="svc-desc">Nord Caraïbe · Nord Atlantique · Centre · Sud · Tour île complet</div>
+        <div class="svc-arrow">›</div>
+      </div>
+      <div class="svc-card orange" onclick="window.open('https://wa.me/596696039329?text=🚖 Bonjour Wana-Kera Taxi ! Je souhaite réserver une course.%0A📍 Départ : %0A🏁 Destination : %0A👥 Passagers : %0A📅 Date/Heure : ')">
+        <div class="svc-icon">💬</div>
+        <div class="svc-name">WhatsApp</div>
+        <div class="svc-desc">Contact direct 7j/7</div>
+        <div class="svc-arrow">›</div>
+      </div>
+      <div class="svc-card blue" onclick="goto('account')">
+        <div class="svc-icon">👤</div>
+        <div class="svc-name">Mon Compte</div>
+        <div class="svc-desc">Historique · Factures</div>
+        <div class="svc-arrow">›</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">Dernières courses</div>
+    <div class="hist-item">
+      <div class="hist-ico" style="background:rgba(232,160,32,0.1);">🚖</div>
+      <div class="hist-info">
+        <div class="hist-ttl">Saint-Pierre → Fort-de-France</div>
+        <div class="hist-date">Hier · 14:32 · Tarif Jour</div>
+      </div>
+      <div class="hist-price">38€</div>
+    </div>
+    <div class="hist-item">
+      <div class="hist-ico" style="background:rgba(41,128,185,0.1);">✈️</div>
+      <div class="hist-info">
+        <div class="hist-ttl">Aéroport → Morne-Rouge</div>
+        <div class="hist-date">22/04 · 08:15 · Forfait</div>
+      </div>
+      <div class="hist-price">55€</div>
+    </div>
+  </div>
+
+  <div class="pad"></div>
+
+  <div class="bnav">
+    <div class="bnav-item on" onclick="goto('home')"><div class="bnav-ico">🏠</div><div class="bnav-lbl">Accueil</div></div>
+    <div class="bnav-item" onclick="goto('course')"><div class="bnav-ico">🗺️</div><div class="bnav-lbl">Course</div></div>
+    <div class="bnav-item bnav-center" onclick="goto('course')"><div class="bnav-fab">🚖</div></div>
+    <div class="bnav-item" onclick="goto('excursions')"><div class="bnav-ico">🌴</div><div class="bnav-lbl">Circuits</div></div>
+    <div class="bnav-item" onclick="goto('account')"><div class="bnav-ico">👤</div><div class="bnav-lbl">Compte</div></div>
+  </div>
+</div>
+
+<!-- COURSE CLASSIQUE -->
+<div class="page" id="course">
+  <div class="status"><span>09:24</span><span>🔋 87%</span></div>
+  <div class="header">
+    <button class="btn-back" onclick="goto('home')">←</button>
+    <div class="h-title">Course Classique</div>
+    <button class="h-icon">⋯</button>
+  </div>
+
+  <div class="map-box">
+    <div class="map-grid-lines"></div>
+    <svg style="position:absolute;inset:0;width:100%;height:100%">
+      <path d="M 110 160 Q 195 100 275 135" stroke="rgba(232,160,32,0.35)" stroke-width="3" fill="none" stroke-dasharray="6,4"/>
+    </svg>
+    <div class="map-pin-start"></div>
+    <div class="map-pin-end"></div>
+    <div class="map-car">🚖</div>
+    <div class="map-label-box">📍 GPS Temps Réel · Martinique</div>
+  </div>
+
+  <div class="toggle-bar">
+    <button class="tog-btn on" id="t-jour" onclick="setMode('jour')">🌞 Tarif A · 1,24€/km</button>
+    <button class="tog-btn" id="t-nuit" onclick="setMode('nuit')">🌙 Tarif B · 1,69€/km</button>
+  </div>
+
+  <div class="form-area">
+    <div class="inp-wrap">
+      <span class="inp-ico">🟢</span>
+      <input class="inp" type="text" placeholder="📍 Point de départ" id="dep" oninput="calcP()">
+    </div>
+    <div class="inp-wrap">
+      <span class="inp-ico">🔴</span>
+      <input class="inp" type="text" placeholder="🏁 Destination" id="dest" oninput="calcP()">
+    </div>
+    <div class="inp-wrap">
+      <span class="inp-ico">👥</span>
+      <select class="inp" id="pax">
+        <option>1 passager</option>
+        <option>2 passagers</option>
+        <option>3 passagers</option>
+        <option>4 passagers (+4€)</option>
+      </select>
+    </div>
+
+    <div class="price-box">
+      <div class="p-left">
+        <div class="p-lbl">Estimation de course</div>
+        <div class="p-val" id="p-val">8€</div>
+        <div class="p-sub" id="p-sub">Prix calculé au compteur</div>
+      </div>
+      <div class="p-right">
+        <div class="p-item" id="p-type">🌞 Tarif A — Jour</div>
+        <div class="p-item">Prise en charge: 3,09€</div>
+        <div class="p-item">🌞 Tarif A: 1,24€/km</div>
+        <div class="p-item">🌙 Tarif B: 1,69€/km</div>
+      </div>
+    </div>
+
+    <button class="cta" onclick="window.open('https://wa.me/596696039329?text=🚖 Bonjour Wana-Kera Taxi ! Je souhaite réserver une course.')" >
+      🚖 Commander ma course
+    </button>
+    <div class="btn-row">
+      <button class="cta cta-wa" onclick="window.open('https://wa.me/596696039329?text=🚖 Bonjour Wana-Kera Taxi !')">💬 WhatsApp</button>
+      <button class="cta cta-tel" onclick="window.open('tel:+596696039329')">📞 Appeler</button>
+    </div>
+    <button class="cta" style="background:rgba(66,133,244,0.15);color:#4285F4;border:1px solid rgba(66,133,244,0.2);box-shadow:none;font-size:14px;margin-bottom:8px;" onclick="window.location.href='mailto:wanakeratxi@gmail.com?subject=Réservation Wana-Kera Taxi&body=Bonjour, je souhaite réserver une course.%0ADépart : %0ADestination : %0APassagers : %0ADate/Heure : '">📧 Email</button>
+  </div>
+  <div class="pad"></div>
+</div>
+
+<!-- AÉROPORT -->
+<div class="page" id="airport">
+  <div class="status"><span>09:24</span><span>🔋 87%</span></div>
+  <div class="header">
+    <button class="btn-back" onclick="goto('home')">←</button>
+    <div class="h-title">Transfert Aéroport</div>
+    <button class="h-icon">✈️</button>
+  </div>
+
+  <div class="notif">✅ Tarifs fixes préfectoraux 2026 — Prix garantis !</div>
+
+  <div class="form-area">
+    <div class="form-lbl">Choisissez votre destination</div>
+    <div class="forfait-grid">
+      <div class="forf-card sel" onclick="selForf(this,35,52)">
+        <div class="forf-dest">✈️ → Fort-de-France</div>
+        <div class="forf-price">35€</div>
+        <div class="forf-night">🌙 Nuit: 52€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,45,68)">
+        <div class="forf-dest">✈️ → Schoelcher</div>
+        <div class="forf-price">45€</div>
+        <div class="forf-night">🌙 Nuit: 68€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,55,82)">
+        <div class="forf-dest">✈️ → Nord Caraïbe</div>
+        <div class="forf-price">55€</div>
+        <div class="forf-night">🌙 Nuit: 82€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,25,37)">
+        <div class="forf-dest">✈️ → Lamentin</div>
+        <div class="forf-price">25€</div>
+        <div class="forf-night">🌙 Nuit: 37€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,60,90)">
+        <div class="forf-dest">✈️ → Sainte-Marie</div>
+        <div class="forf-price">60€</div>
+        <div class="forf-night">🌙 Nuit: 90€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,65,98)">
+        <div class="forf-dest">✈️ → Le Robert</div>
+        <div class="forf-price">65€</div>
+        <div class="forf-night">🌙 Nuit: 98€</div>
+      </div>
+    </div>
+
+    <div class="form-lbl">Date & Heure de vol</div>
+    <div class="row2">
+      <input class="inp" type="date" style="padding-left:12px;">
+      <input class="inp" type="time" style="padding-left:12px;" value="09:00">
+    </div>
+
+    <div class="form-lbl">Passagers & Bagages</div>
+    <div class="row2">
+      <select class="inp" style="padding-left:12px;">
+        <option>1 passager</option>
+        <option>2 passagers</option>
+        <option>3 passagers</option>
+        <option>4 passagers</option>
+      </select>
+      <select class="inp" style="padding-left:12px;">
+        <option>0 bagage</option>
+        <option>1 bagage</option>
+        <option>2 bagages</option>
+        <option>3+ bagages</option>
+      </select>
+    </div>
+
+    <div class="price-box">
+      <div class="p-left">
+        <div class="p-lbl">Forfait sélectionné</div>
+        <div class="p-val" id="ap-price">35€</div>
+        <div class="p-sub">Prix fixe garanti</div>
+      </div>
+      <div class="p-right">
+        <div class="p-item">🌙 Nuit/Férié</div>
+        <div style="font-size:18px;font-weight:700;color:var(--gris);" id="ap-night">52€</div>
+      </div>
+    </div>
+
+    <button class="cta" onclick="window.open('https://wa.me/596696039329?text=%E2%9C%88%EF%B8%8F%20Bonjour%20Wana-Kera%20Taxi%20!%20Je%20souhaite%20r%C3%A9server%20un%20transfert%20a%C3%A9roport.%0A%F0%9F%93%85%20Date%2FHeure%20%3A%20%0A%F0%9F%91%A5%20Passagers%20%3A%20%0A%F0%9F%A7%B3%20Bagages%20%3A%20%0A%F0%9F%93%8D%20Destination%20%3A%20')">
+      ✈️ Réserver ce transfert
+    </button>
+    <button class="cta cta-wa" onclick="window.open('https://wa.me/596696039329?text=%F0%9F%9A%96%20Bonjour%20Wana-Kera%20Taxi%20!%20Je%20souhaite%20r%C3%A9server%20une%20course.%0A%F0%9F%93%8D%20D%C3%A9part%20%3A%20%0A%F0%9F%8F%81%20Destination%20%3A%20%0A%F0%9F%91%A5%20Passagers%20%3A%20%0A%F0%9F%93%85%20Date%2FHeure%20%3A%20')">💬 Confirmer par WhatsApp</button>
+  </div>
+  <div class="pad"></div>
+</div>
+
+<!-- EXCURSIONS -->
+<div class="page" id="excursions">
+  <div class="status"><span>09:24</span><span>🔋 87%</span></div>
+  <div class="header">
+    <button class="btn-back" onclick="goto('home')">←</button>
+    <div class="h-title">Excursions & Circuits</div>
+    <button class="h-icon">🔍</button>
+  </div>
+
+  <div class="exc-filter">
+    <div class="lang-pill on">Tous</div>
+    <div class="lang-pill">🌋 Nord Caraïbe</div>
+    <div class="lang-pill">🌊 Nord Atlantique</div>
+    <div class="lang-pill">🏙️ Centre</div>
+    <div class="lang-pill">🏖️ Sud</div>
+    <div class="lang-pill">🗺️ Tour île</div>
+  </div>
+
+  <div class="exc-list">
+
+    <div class="exc-card" onclick="alert('🌋 Réservation confirmée !\n\nMontagne Pelée & Saint-Pierre\n120€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-1">🌋<div class="exc-badge">🌋 Nord Caraïbe</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Montagne Pelée & Saint-Pierre</div>
+        <div class="exc-desc">Ruines volcaniques, Musée du Volcan, distilleries historiques. Une plongée dans l'histoire de la Martinique.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Demi-journée · 4h</div><div class="exc-stars">★★★★★ (48)</div></div>
+          <div class="exc-price">120€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🌊 Réservation confirmée !\n\nNord Sauvage · Grand-Rivière\n180€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-2">🌊<div class="exc-badge">🌊 Nord Atlantique</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Grand-Rivière & Anse Couleuvre</div>
+        <div class="exc-desc">Le bout du monde martiniquais. Falaises, mer turquoise, végétation tropicale luxuriante et villages de pêcheurs.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Journée · 8h</div><div class="exc-stars">★★★★★ (32)</div></div>
+          <div class="exc-price">180€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🏙️ Réservation confirmée !\n\nFort-de-France & Balata\n120€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-3">🏙️<div class="exc-badge">🏙️ Centre</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Fort-de-France & Jardin de Balata</div>
+        <div class="exc-desc">La Savane, Bibliothèque Schoelcher, marché couvert, et le magnifique jardin botanique de Balata.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Demi-journée · 5h</div><div class="exc-stars">★★★★☆ (55)</div></div>
+          <div class="exc-price">120€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🏖️ Réservation confirmée !\n\nPlages du Sud\n200€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-4">🏖️<div class="exc-badge">🏖️ Sud Martinique</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Les Salines & Rocher du Diamant</div>
+        <div class="exc-desc">Les plus belles plages de la Caraïbe. Sable blanc immaculé, eaux cristallines turquoise et vue sur le Diamant.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Journée · 8h</div><div class="exc-stars">★★★★★ (71)</div></div>
+          <div class="exc-price">200€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🗺️ Grand Tour réservé !\n\nTour complet de la Martinique\n350€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-5">🗺️<div class="exc-badge">⭐ Tour Complet</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Grand Tour de la Martinique</div>
+        <div class="exc-desc">Nord Caraïbe + Centre + Sud en une journée inoubliable. Le meilleur de l'île avec votre guide Wana-Kera.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Journée complète · 10h</div><div class="exc-stars">★★★★★ (19)</div></div>
+          <div class="exc-price">350€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🎯 Demande envoyée !\n\nNous vous contacterons sous 2h\npour créer votre circuit sur mesure.')">
+      <div class="exc-img" style="background:linear-gradient(135deg,#0a001a,#180035);">🎯<div class="exc-badge">✨ Sur Mesure</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Circuit Personnalisé</div>
+        <div class="exc-desc">Vous choisissez vos sites, votre durée, votre groupe. Devis gratuit sous 2h par WhatsApp.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ À définir ensemble</div><div class="exc-stars">⭐ Sur devis</div></div>
+          <div class="exc-price" style="font-size:14px;">Devis →</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pad"></div>
+  </div>
+</div>
+
+<!-- COMPTE -->
+<div class="page" id="account">
+  <div class="status"><span>09:24</span><span>🔋 87%</span></div>
+  <div class="header">
+    <button class="btn-back" onclick="goto('home')">←</button>
+    <div class="h-title">Mon Compte</div>
+    <button class="h-icon">✏️</button>
+  </div>
+
+  <div class="profile-top">
+    <div class="avatar-big">👤</div>
+    <div class="prof-name">Mon Profil</div>
+    <div class="prof-tel">+596 6XX XX XX XX</div>
+    <div class="stats">
+      <div class="stat"><div class="stat-n">12</div><div class="stat-l">Courses</div></div>
+      <div class="stat"><div class="stat-n">3</div><div class="stat-l">Excursions</div></div>
+      <div class="stat"><div class="stat-n">4.9⭐</div><div class="stat-l">Note</div></div>
+    </div>
+  </div>
+
+  <div class="menu-list">
+    <div class="menu-row" onclick="alert('📋 Historique de vos 12 courses')">
+      <div class="menu-ico">📋</div>
+      <div class="menu-txt"><div class="menu-ttl">Historique des courses</div><div class="menu-sub">12 courses · 3 excursions</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('🧾 Factures téléchargeables en PDF')">
+      <div class="menu-ico">🧾</div>
+      <div class="menu-txt"><div class="menu-ttl">Mes factures</div><div class="menu-sub">Télécharger en PDF</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('💳 CB · PayPal · Espèces')">
+      <div class="menu-ico">💳</div>
+      <div class="menu-txt"><div class="menu-ttl">Paiement</div><div class="menu-sub">CB · PayPal · Espèces</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('🌍 Français · English · Español')">
+      <div class="menu-ico">🌍</div>
+      <div class="menu-txt"><div class="menu-ttl">Langue</div><div class="menu-sub">Français · English · Español</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('📞 +596 696 039 329\n💬 WhatsApp disponible 7j/7\n📧 contact@wanakera.mq')">
+      <div class="menu-ico">📞</div>
+      <div class="menu-txt"><div class="menu-ttl">Nous contacter</div><div class="menu-sub">Tél · WhatsApp · Email</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('📜 Conditions générales\nPolitique de confidentialité\nLicence Taxi — Préfecture Martinique')">
+      <div class="menu-ico">📜</div>
+      <div class="menu-txt"><div class="menu-ttl">CGV & Confidentialité</div><div class="menu-sub">Licence taxi · Préfecture</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('🚨 URGENCES\n15 · SAMU\n17 · Police\n18 · Pompiers\n\nWana-Kera: +596 696 039 329')">
+      <div class="menu-ico red">🚨</div>
+      <div class="menu-txt"><div class="menu-ttl" style="color:var(--rouge)">Urgences</div><div class="menu-sub">15 · 17 · 18</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+  </div>
+
+  <div style="padding:0 16px 20px;">
+    <div style="background:linear-gradient(135deg,rgba(232,160,32,0.08),rgba(232,160,32,0.03));border:1px solid rgba(232,160,32,0.15);border-radius:16px;padding:16px;text-align:center;">
+      <div style="font-size:22px;margin-bottom:6px;">🏝️</div>
+      <div style="font-size:13px;font-weight:700;color:var(--blanc);">Wana-Kera Taxi</div>
+      <div style="font-size:11px;color:var(--gris);margin-top:4px;">Martinique · Nord Caraïbe · Depuis 2026</div>
+      <div style="font-size:11px;color:var(--or);margin-top:3px;">Licence Taxi — Préfecture de Martinique</div>
+    </div>
+  </div>
+</div>
+
+</div><!-- screen -->
+</div><!-- phone -->
+
+<script>
+let cur = 'splash';
+
+function goto(id) {
+  const prev = document.getElementById(cur);
+  const next = document.getElementById(id);
+  if (cur === id) return;
+  prev.classList.add('prev');
+  next.classList.add('active');
+  setTimeout(() => {
+    prev.classList.remove('active','prev');
+  }, 350);
+  cur = id;
+  next.scrollTop = 0;
+}
+
+// Clock
+function tick() {
+  const t = new Date().toTimeString().slice(0,5);
+  document.querySelectorAll('.status span:first-child').forEach(e => e.textContent = t);
+  document.getElementById('clk') && (document.getElementById('clk').textContent = t);
+}
+tick();
+setInterval(tick, 30000);
+
+// Tarif auto
+function tarifAuto() {
+  const h = new Date().getHours();
+  const nuit = h >= 19 || h < 7;
+  const live = document.getElementById('tarif-live');
+  const pill = document.getElementById('tarif-pill');
+  const txt = document.getElementById('tarif-txt');
+  if (nuit) {
+    live && (live.textContent = '🌙 Tarif B Nuit — 1,69€/km · Min. 8€');
+    pill && (pill.textContent = '🌙 Tarif B');
+    txt && (txt.textContent = 'Tarif Nuit B');
+  } else {
+    live && (live.textContent = '🌞 Tarif A: 1,30€/km · 🌙 Tarif B Nuit: +50% · Min. 8€');
+    pill && (pill.textContent = '🌞 Tarif A');
+    txt && (txt.textContent = 'Tarif Jour A');
+  }
+}
+tarifAuto();
+
+// Mode tarif
+let mode = 'jour';
+function setMode(m) {
+  mode = m;
+  document.getElementById('t-jour').classList.toggle('on', m==='jour');
+  document.getElementById('t-nuit').classList.toggle('on', m==='nuit');
+  const pt = document.getElementById('p-type');
+  if (pt) pt.textContent = m==='jour' ? '🌞 Tarif A — 1,24€/km' : '🌙 Tarif B — 1,69€/km';
+  calcP();
+}
+
+function calcP() {
+  const d = document.getElementById('dep')?.value;
+  const ds = document.getElementById('dest')?.value;
+  const pv = document.getElementById('p-val');
+  const ps = document.getElementById('p-sub');
+  if (!pv) return;
+  if (!d || !ds) { pv.textContent='8€'; ps && (ps.textContent='Tarif minimum légal'); return; }
+  const km = Math.floor(Math.random()*18)+4;
+  const rate = mode==='nuit' ? 1.69 : 1.24;
+  const price = Math.max(8, 3.09 + km*rate);
+  pv.textContent = Math.round(price) + '€';
+  ps && (ps.textContent = `~${km} km · ${rate}€/km`);
+}
+
+function selForf(el, p, n) {
+  document.querySelectorAll('.forf-card').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  const ap = document.getElementById('ap-price');
+  const an = document.getElementById('ap-night');
+  if (ap) ap.textContent = p + '€';
+  if (an) an.textContent = n + '€';
+}
+
+function commanderCourse() {
+  var dep = document.getElementById('dep') ? document.getElementById('dep').value : '';
+  var dest = document.getElementById('dest') ? document.getElementById('dest').value : '';
+  var pax = document.getElementById('pax') ? document.getElementById('pax').value : '1 passager';
+  var msg = '🚖 Bonjour Wana-Kera Taxi !%0AJe souhaite commander une course.%0A%0A📍 Départ : ' + encodeURIComponent(dep) + '%0A🏁 Destination : ' + encodeURIComponent(dest) + '%0A👥 ' + encodeURIComponent(pax) + '%0A📅 Date/Heure : ';
+  window.open('https://wa.me/596696039329?text=' + msg);
+}
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Wana-Kera Taxi — Martinique</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --or: #E8A020;
+  --or2: #F5B840;
+  --nuit: #0A0F1E;
+  --nuit2: #111827;
+  --nuit3: #1C2840;
+  --vert: #1DB954;
+  --rouge: #E74C3C;
+  --bleu: #2980B9;
+  --blanc: #FFFEF9;
+  --gris: #7A8BA0;
+  --card: #161E30;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: #0A0F1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.phone {
+  width: 390px;
+  height: 844px;
+  background: var(--nuit);
+  border-radius: 48px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 50px 120px rgba(0,0,0,0.8), 0 0 0 2px #1a2540;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* PAGES */
+.page {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--nuit);
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+.page::-webkit-scrollbar { display: none; }
+.page.active { transform: translateX(0); }
+.page.prev { transform: translateX(-30%); }
+
+/* SPLASH */
+#splash {
+  background: radial-gradient(ellipse at 30% 20%, rgba(232,160,32,0.2), transparent 60%),
+              radial-gradient(ellipse at 80% 80%, rgba(29,185,84,0.1), transparent 60%),
+              var(--nuit);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 30px;
+}
+
+.splash-wave {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 200px;
+  background: linear-gradient(to top, rgba(232,160,32,0.05), transparent);
+  border-radius: 60% 60% 0 0;
+}
+
+.logo-wrap {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.logo-emoji {
+  font-size: 80px;
+  display: block;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 10px 30px rgba(232,160,32,0.5));
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+.app-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--blanc);
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.app-name em { color: var(--or); font-style: normal; }
+
+.app-tagline {
+  font-size: 13px;
+  color: var(--gris);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 12px;
+  color: var(--gris);
+}
+
+.badge.gold { border-color: rgba(232,160,32,0.3); color: var(--or2); background: rgba(232,160,32,0.08); }
+
+.splash-cta {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--or), #C87010);
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 30px rgba(232,160,32,0.35);
+  transition: all 0.3s;
+  width: 100%;
+}
+.btn-primary:active { transform: scale(0.97); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--gris);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 14px;
+  border-radius: 18px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.3s;
+  width: 100%;
+}
+.btn-ghost span { color: var(--or); }
+
+/* STATUS BAR */
+.status {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 24px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--blanc);
+  flex-shrink: 0;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 14px;
+  flex-shrink: 0;
+}
+
+.btn-back {
+  width: 40px; height: 40px;
+  background: rgba(255,255,255,0.07);
+  border: none; border-radius: 12px;
+  color: white; font-size: 18px;
+  cursor: pointer; display: flex;
+  align-items: center; justify-content: center;
+}
+
+.h-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--blanc);
+}
+
+.h-icon {
+  width: 40px; height: 40px;
+  background: rgba(232,160,32,0.12);
+  border: none; border-radius: 12px;
+  color: var(--or); font-size: 16px;
+  cursor: pointer; display: flex;
+  align-items: center; justify-content: center;
+}
+
+/* HOME */
+.home-hero {
+  background: linear-gradient(135deg, var(--nuit3), var(--card));
+  margin: 0 16px 16px;
+  border-radius: 24px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.home-hero::before {
+  content: '🌋';
+  position: absolute;
+  right: -5px; top: -5px;
+  font-size: 90px;
+  opacity: 0.07;
+  transform: rotate(10deg);
+}
+
+.hero-greeting { font-size: 13px; color: var(--gris); }
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--blanc);
+  margin-top: 2px;
+}
+
+.hero-loc {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--or2);
+}
+
+.tarif-pill {
+  position: absolute;
+  top: 16px; right: 16px;
+  background: rgba(232,160,32,0.15);
+  border: 1px solid rgba(232,160,32,0.25);
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--or);
+}
+
+.live-dot {
+  width: 8px; height: 8px;
+  background: var(--vert);
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse-dot 1.5s ease-in-out infinite;
+  box-shadow: 0 0 6px var(--vert);
+}
+@keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+/* SERVICES */
+.section { padding: 0 16px 14px; flex-shrink: 0; }
+.sec-title {
+  font-size: 11px;
+  color: var(--gris);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.svc-card {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 20px;
+  padding: 18px 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.svc-card.wide { grid-column: 1/-1; }
+.svc-card:active { transform: scale(0.97); }
+
+.svc-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 20px;
+}
+.svc-card.orange::after { background: linear-gradient(135deg, rgba(232,160,32,0.12), transparent); }
+.svc-card.green::after { background: linear-gradient(135deg, rgba(29,185,84,0.12), transparent); }
+.svc-card.blue::after { background: linear-gradient(135deg, rgba(41,128,185,0.12), transparent); }
+.svc-card:hover::after { opacity: 1; }
+
+.svc-icon {
+  width: 42px; height: 42px;
+  border-radius: 13px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; margin-bottom: 10px;
+}
+.orange .svc-icon { background: rgba(232,160,32,0.15); }
+.green .svc-icon { background: rgba(29,185,84,0.15); }
+.blue .svc-icon { background: rgba(41,128,185,0.15); }
+
+.svc-name { font-size: 13px; font-weight: 600; color: var(--blanc); margin-bottom: 3px; }
+.svc-desc { font-size: 11px; color: var(--gris); line-height: 1.4; }
+.svc-arrow { position: absolute; bottom: 12px; right: 12px; color: var(--gris); font-size: 14px; }
+
+/* TARIF BANNER */
+.tarif-bar {
+  margin: 0 16px 14px;
+  background: linear-gradient(135deg, rgba(232,160,32,0.12), rgba(232,160,32,0.04));
+  border: 1px solid rgba(232,160,32,0.18);
+  border-radius: 16px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.tarif-info .t-label { font-size: 11px; color: var(--gris); }
+.tarif-info .t-val { font-size: 13px; font-weight: 700; color: var(--or); margin-top: 2px; }
+.tarif-right { margin-left: auto; font-size: 11px; color: var(--gris); text-align: right; }
+
+/* BOTTOM NAV */
+.bnav {
+  display: flex;
+  background: var(--nuit2);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding: 10px 0 22px;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.bnav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.bnav-ico { font-size: 20px; opacity: 0.45; transition: 0.2s; }
+.bnav-lbl { font-size: 9px; color: var(--gris); transition: 0.2s; font-weight: 500; }
+.bnav-item.on .bnav-ico { opacity: 1; }
+.bnav-item.on .bnav-lbl { color: var(--or); font-weight: 700; }
+
+.bnav-center {
+  position: relative; top: -18px;
+}
+.bnav-fab {
+  width: 54px; height: 54px;
+  background: linear-gradient(135deg, var(--or), #C87010);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 6px 20px rgba(232,160,32,0.45);
+  border: 3px solid var(--nuit2);
+}
+
+/* COURSE PAGE */
+.map-box {
+  height: 200px;
+  background: linear-gradient(135deg, #080E1A, #101828);
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin: 0 0 0 0;
+}
+
+.map-grid-lines {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(232,160,32,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232,160,32,0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.map-route {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.map-pin-start {
+  position: absolute;
+  width: 12px; height: 12px;
+  background: var(--vert);
+  border-radius: 50%;
+  border: 3px solid white;
+  top: 42%; left: 28%;
+  box-shadow: 0 0 16px rgba(29,185,84,0.7);
+}
+
+.map-pin-end {
+  position: absolute;
+  width: 12px; height: 12px;
+  background: var(--or);
+  border-radius: 50%;
+  border: 3px solid white;
+  top: 55%; right: 22%;
+  box-shadow: 0 0 16px rgba(232,160,32,0.7);
+}
+
+.map-car {
+  position: absolute;
+  font-size: 26px;
+  top: 38%; left: 42%;
+  animation: drive 3s ease-in-out infinite;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
+}
+@keyframes drive { 0%,100%{transform:translate(0,0)} 50%{transform:translate(18px,8px)} }
+
+.map-label-box {
+  position: absolute;
+  bottom: 10px; left: 12px;
+  background: rgba(0,0,0,0.65);
+  border: 1px solid rgba(232,160,32,0.25);
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: var(--or);
+  display: flex; align-items: center; gap: 5px;
+}
+
+/* TOGGLE */
+.toggle-bar {
+  display: flex;
+  background: var(--card);
+  border-radius: 14px;
+  padding: 4px;
+  margin: 14px 16px 12px;
+  border: 1px solid rgba(255,255,255,0.05);
+  flex-shrink: 0;
+}
+
+.tog-btn {
+  flex: 1;
+  padding: 9px;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Outfit', sans-serif;
+  background: transparent;
+  color: var(--gris);
+}
+.tog-btn.on {
+  background: linear-gradient(135deg, var(--or), #C87010);
+  color: white;
+  box-shadow: 0 3px 12px rgba(232,160,32,0.3);
+}
+
+/* FORM */
+.form-area { padding: 0 16px; flex: 1; }
+
+.inp-wrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.inp-ico {
+  position: absolute;
+  left: 14px; top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+}
+
+.inp {
+  width: 100%;
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  padding: 13px 13px 13px 42px;
+  font-size: 14px;
+  color: var(--blanc);
+  font-family: 'Outfit', sans-serif;
+  outline: none;
+  transition: all 0.3s;
+}
+.inp:focus { border-color: var(--or); box-shadow: 0 0 0 3px rgba(232,160,32,0.1); }
+.inp::placeholder { color: var(--gris); }
+
+select.inp { appearance: none; cursor: pointer; }
+option { background: #1C2840; }
+
+/* PRICE BOX */
+.price-box {
+  background: linear-gradient(135deg, rgba(232,160,32,0.12), rgba(232,160,32,0.04));
+  border: 1px solid rgba(232,160,32,0.2);
+  border-radius: 16px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.p-left .p-lbl { font-size: 11px; color: var(--gris); margin-bottom: 3px; }
+.p-left .p-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px; font-weight: 700;
+  color: var(--or);
+}
+.p-left .p-sub { font-size: 11px; color: var(--gris); margin-top: 2px; }
+.p-right { text-align: right; }
+.p-right .p-item { font-size: 11px; color: var(--gris); margin-bottom: 3px; }
+
+/* BUTTONS */
+.cta {
+  width: 100%;
+  background: linear-gradient(135deg, var(--or), #C87010);
+  color: white;
+  border: none;
+  padding: 17px;
+  border-radius: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  box-shadow: 0 6px 24px rgba(232,160,32,0.35);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.cta:active { transform: scale(0.98); }
+
+.cta-wa {
+  background: rgba(29,185,84,0.15);
+  color: var(--vert);
+  border: 1px solid rgba(29,185,84,0.2);
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.cta-tel {
+  background: rgba(41,128,185,0.15);
+  color: #5DADE2;
+  border: 1px solid rgba(41,128,185,0.2);
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.btn-row { display: flex; gap: 8px; margin-bottom: 8px; }
+.btn-row .cta { margin-bottom: 0; }
+
+/* FORFAITS */
+.forfait-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-bottom: 12px;
+}
+
+.forf-card {
+  background: var(--card);
+  border: 1.5px solid rgba(255,255,255,0.05);
+  border-radius: 14px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.forf-card.sel {
+  border-color: var(--or);
+  background: rgba(232,160,32,0.08);
+}
+.forf-card:active { transform: scale(0.97); }
+.forf-dest { font-size: 11px; color: var(--gris); margin-bottom: 5px; }
+.forf-price { font-size: 20px; font-weight: 700; color: var(--blanc); }
+.forf-night { font-size: 10px; color: var(--or); margin-top: 3px; }
+
+/* EXCURSIONS */
+.exc-card {
+  background: var(--card);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+.exc-card:active { transform: scale(0.98); }
+
+.exc-img {
+  height: 110px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 55px;
+  position: relative;
+}
+.exc-img-1 { background: linear-gradient(135deg, #1a0800, #3a1800); }
+.exc-img-2 { background: linear-gradient(135deg, #001428, #002848); }
+.exc-img-3 { background: linear-gradient(135deg, #001a0a, #003018); }
+.exc-img-4 { background: linear-gradient(135deg, #1a1000, #382200); }
+.exc-img-5 { background: linear-gradient(135deg, #0a0018, #180030); }
+
+.exc-badge {
+  position: absolute;
+  top: 8px; left: 8px;
+  background: rgba(0,0,0,0.65);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 3px 9px;
+  font-size: 10px;
+  color: var(--blanc);
+}
+
+.exc-body { padding: 12px; }
+.exc-title { font-weight: 700; color: var(--blanc); font-size: 14px; margin-bottom: 5px; }
+.exc-desc { font-size: 11px; color: var(--gris); line-height: 1.5; margin-bottom: 10px; }
+
+.exc-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exc-dur { font-size: 11px; color: var(--gris); }
+.exc-stars { color: var(--or2); font-size: 11px; }
+.exc-price { font-size: 18px; font-weight: 700; color: var(--or); }
+
+/* COMPTE */
+.profile-top {
+  background: linear-gradient(135deg, var(--nuit3), var(--card));
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.avatar-big {
+  width: 72px; height: 72px;
+  background: linear-gradient(135deg, var(--or), var(--or2));
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px;
+  margin: 0 auto 12px;
+  box-shadow: 0 6px 20px rgba(232,160,32,0.3);
+}
+
+.prof-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; font-weight: 700;
+  color: var(--blanc);
+}
+.prof-tel { font-size: 13px; color: var(--gris); margin-top: 3px; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+.stat { background: var(--card); padding: 12px; text-align: center; }
+.stat-n { font-size: 20px; font-weight: 700; color: var(--or); }
+.stat-l { font-size: 10px; color: var(--gris); margin-top: 2px; }
+
+.menu-list { padding: 12px 16px; flex: 1; }
+
+.menu-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.menu-row:hover { padding-left: 5px; }
+
+.menu-ico {
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  background: rgba(232,160,32,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 17px; flex-shrink: 0;
+}
+.menu-ico.red { background: rgba(231,76,60,0.1); }
+
+.menu-txt { flex: 1; }
+.menu-ttl { font-size: 14px; font-weight: 600; color: var(--blanc); }
+.menu-sub { font-size: 11px; color: var(--gris); margin-top: 2px; }
+.menu-arr { color: var(--gris); font-size: 13px; }
+
+/* LANG BAR */
+.lang-bar {
+  display: flex;
+  gap: 7px;
+  padding: 10px 16px 0;
+  flex-shrink: 0;
+}
+.lang-pill {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 11px;
+  color: var(--gris);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.lang-pill.on { border-color: var(--or); color: var(--or); background: rgba(232,160,32,0.08); }
+
+.pad { height: 20px; flex-shrink: 0; }
+
+/* HISTORY */
+.hist-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.hist-ico {
+  width: 38px; height: 38px;
+  border-radius: 11px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; flex-shrink: 0;
+}
+.hist-info { flex: 1; }
+.hist-ttl { font-size: 13px; font-weight: 600; color: var(--blanc); }
+.hist-date { font-size: 11px; color: var(--gris); margin-top: 2px; }
+.hist-price { font-size: 15px; font-weight: 700; color: var(--or); }
+
+/* NOTIF BANNER */
+.notif {
+  margin: 0 16px 12px;
+  background: rgba(29,185,84,0.1);
+  border: 1px solid rgba(29,185,84,0.2);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: #5DDB84;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.wa-float {
+  position: fixed;
+  bottom: 100px; right: 20px;
+  width: 46px; height: 46px;
+  background: var(--vert);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(29,185,84,0.4);
+  z-index: 10;
+  transition: 0.3s;
+}
+.wa-float:active { transform: scale(1.1); }
+
+.form-lbl {
+  font-size: 11px;
+  color: var(--gris);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
+
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-bottom: 10px; }
+
+.exc-filter {
+  display: flex;
+  gap: 7px;
+  padding: 0 16px 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex-shrink: 0;
+}
+.exc-filter::-webkit-scrollbar { display: none; }
+
+.exc-list { padding: 0 16px; flex: 1; overflow-y: auto; }
+.exc-list::-webkit-scrollbar { display: none; }
+</style>
+</head>
+<body>
+<div class="phone">
+<div class="screen" id="screen">
+
+<!-- SPLASH -->
+<div class="page active" id="splash">
+  <div class="splash-wave"></div>
+  <div class="logo-wrap">
+    <span class="logo-emoji">🚖</span>
+  </div>
+  <div class="app-name">Wana<em>-Kera</em></div>
+  <div class="app-name" style="font-size:30px;color:var(--gris);font-weight:400;margin-top:2px;">Taxi</div>
+  <div class="app-tagline">Martinique • Nord Caraïbe</div>
+  <div class="badges">
+    <span class="badge gold">🌴 Nord Caraïbe</span>
+    <span class="badge">✈️ Aéroport</span>
+    <span class="badge">🌋 Excursions</span>
+  </div>
+  <div class="splash-cta">
+    <button class="btn-primary" onclick="goto('home')">Commencer →</button>
+    <button class="btn-ghost" onclick="goto('home')">Déjà client ? <span>Se connecter</span></button>
+  </div>
+</div>
+
+<!-- HOME -->
+<div class="page" id="home">
+  <div class="status"><span id="clk">09:24</span><span>🔋 87%</span></div>
+
+  <div class="lang-bar">
+    <div class="lang-pill on">🇫🇷 FR</div>
+    <div class="lang-pill">🇬🇧 EN</div>
+    <div class="lang-pill">🇪🇸 ES</div>
+  </div>
+
+  <div class="home-hero" style="margin-top:12px;">
+    <div class="hero-greeting">Bonjour 👋</div>
+    <div class="hero-title">Bienvenue !</div>
+    <div class="hero-loc">📍 Nord Martinique • <span id="tarif-txt">Tarif Jour A</span></div>
+    <div class="tarif-pill" id="tarif-pill">🌞 Tarif A: 1,24€/km</div>
+  </div>
+
+  <div class="tarif-bar">
+    <span class="live-dot"></span>
+    <div class="tarif-info">
+      <div class="t-label">Tarif préfectoral en cours</div>
+      <div class="t-val" id="tarif-live">🌞 Tarif A Jour — Prise en charge: 4,48€ + 1,30€/km</div>
+    </div>
+    <div class="tarif-right">Official<br>2026</div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">Nos Services</div>
+    <div class="service-grid">
+      <div class="svc-card orange" onclick="goto('course')">
+        <div class="svc-icon">🚖</div>
+        <div class="svc-name">Course Classique</div>
+        <div class="svc-desc">GPS temps réel · Devis immédiat</div>
+        <div class="svc-arrow">›</div>
+      </div>
+      <div class="svc-card blue" onclick="goto('airport')">
+        <div class="svc-icon">✈️</div>
+        <div class="svc-name">Aéroport</div>
+        <div class="svc-desc">Forfaits fixes · Aimé Césaire</div>
+        <div class="svc-arrow">›</div>
+      </div>
+      <div class="svc-card green wide" onclick="goto('excursions')">
+        <div class="svc-icon">🌴</div>
+        <div class="svc-name">Excursions & Circuits</div>
+        <div class="svc-desc">Nord Caraïbe · Nord Atlantique · Centre · Sud · Tour île complet</div>
+        <div class="svc-arrow">›</div>
+      </div>
+      <div class="svc-card orange" onclick="window.open('https://wa.me/596696039329?text=🚖 Bonjour Wana-Kera Taxi ! Je souhaite réserver une course.%0A📍 Départ : %0A🏁 Destination : %0A👥 Passagers : %0A📅 Date/Heure : ')">
+        <div class="svc-icon">💬</div>
+        <div class="svc-name">WhatsApp</div>
+        <div class="svc-desc">Contact direct 7j/7</div>
+        <div class="svc-arrow">›</div>
+      </div>
+      <div class="svc-card blue" onclick="goto('account')">
+        <div class="svc-icon">👤</div>
+        <div class="svc-name">Mon Compte</div>
+        <div class="svc-desc">Historique · Factures</div>
+        <div class="svc-arrow">›</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="sec-title">Dernières courses</div>
+    <div class="hist-item">
+      <div class="hist-ico" style="background:rgba(232,160,32,0.1);">🚖</div>
+      <div class="hist-info">
+        <div class="hist-ttl">Saint-Pierre → Fort-de-France</div>
+        <div class="hist-date">Hier · 14:32 · Tarif Jour</div>
+      </div>
+      <div class="hist-price">38€</div>
+    </div>
+    <div class="hist-item">
+      <div class="hist-ico" style="background:rgba(41,128,185,0.1);">✈️</div>
+      <div class="hist-info">
+        <div class="hist-ttl">Aéroport → Morne-Rouge</div>
+        <div class="hist-date">22/04 · 08:15 · Forfait</div>
+      </div>
+      <div class="hist-price">55€</div>
+    </div>
+  </div>
+
+  <div class="pad"></div>
+
+  <div class="bnav">
+    <div class="bnav-item on" onclick="goto('home')"><div class="bnav-ico">🏠</div><div class="bnav-lbl">Accueil</div></div>
+    <div class="bnav-item" onclick="goto('course')"><div class="bnav-ico">🗺️</div><div class="bnav-lbl">Course</div></div>
+    <div class="bnav-item bnav-center" onclick="goto('course')"><div class="bnav-fab">🚖</div></div>
+    <div class="bnav-item" onclick="goto('excursions')"><div class="bnav-ico">🌴</div><div class="bnav-lbl">Circuits</div></div>
+    <div class="bnav-item" onclick="goto('account')"><div class="bnav-ico">👤</div><div class="bnav-lbl">Compte</div></div>
+  </div>
+</div>
+
+<!-- COURSE CLASSIQUE -->
+<div class="page" id="course">
+  <div class="status"><span>09:24</span><span>🔋 87%</span></div>
+  <div class="header">
+    <button class="btn-back" onclick="goto('home')">←</button>
+    <div class="h-title">Course Classique</div>
+    <button class="h-icon">⋯</button>
+  </div>
+
+  <div class="map-box">
+    <div class="map-grid-lines"></div>
+    <svg style="position:absolute;inset:0;width:100%;height:100%">
+      <path d="M 110 160 Q 195 100 275 135" stroke="rgba(232,160,32,0.35)" stroke-width="3" fill="none" stroke-dasharray="6,4"/>
+    </svg>
+    <div class="map-pin-start"></div>
+    <div class="map-pin-end"></div>
+    <div class="map-car">🚖</div>
+    <div class="map-label-box">📍 GPS Temps Réel · Martinique</div>
+  </div>
+
+  <div class="toggle-bar">
+    <button class="tog-btn on" id="t-jour" onclick="setMode('jour')">🌞 Tarif A · 1,24€/km</button>
+    <button class="tog-btn" id="t-nuit" onclick="setMode('nuit')">🌙 Tarif B · 1,69€/km</button>
+  </div>
+
+  <div class="form-area">
+    <div class="inp-wrap">
+      <span class="inp-ico">🟢</span>
+      <input class="inp" type="text" placeholder="📍 Point de départ" id="dep" oninput="calcP()">
+    </div>
+    <div class="inp-wrap">
+      <span class="inp-ico">🔴</span>
+      <input class="inp" type="text" placeholder="🏁 Destination" id="dest" oninput="calcP()">
+    </div>
+    <div class="inp-wrap">
+      <span class="inp-ico">👥</span>
+      <select class="inp" id="pax">
+        <option>1 passager</option>
+        <option>2 passagers</option>
+        <option>3 passagers</option>
+        <option>4 passagers (+4€)</option>
+      </select>
+    </div>
+
+    <div class="price-box">
+      <div class="p-left">
+        <div class="p-lbl">Estimation de course</div>
+        <div class="p-val" id="p-val">8€</div>
+        <div class="p-sub" id="p-sub">Prix calculé au compteur</div>
+      </div>
+      <div class="p-right">
+        <div class="p-item" id="p-type">🌞 Tarif A — Jour</div>
+        <div class="p-item">Prise en charge: 3,09€</div>
+        <div class="p-item">🌞 Tarif A: 1,24€/km</div>
+        <div class="p-item">🌙 Tarif B: 1,69€/km</div>
+      </div>
+    </div>
+
+    <button class="cta" onclick="window.open('https://wa.me/596696039329?text=🚖 Bonjour Wana-Kera Taxi ! Je souhaite réserver une course.')" >
+      🚖 Commander ma course
+    </button>
+    <div class="btn-row">
+      <button class="cta cta-wa" onclick="window.open('https://wa.me/596696039329?text=🚖 Bonjour Wana-Kera Taxi !')">💬 WhatsApp</button>
+      <button class="cta cta-tel" onclick="window.open('tel:+596696039329')">📞 Appeler</button>
+    </div>
+    <button class="cta" style="background:rgba(66,133,244,0.15);color:#4285F4;border:1px solid rgba(66,133,244,0.2);box-shadow:none;font-size:14px;margin-bottom:8px;" onclick="window.location.href='mailto:wanakeratxi@gmail.com?subject=Réservation Wana-Kera Taxi&body=Bonjour, je souhaite réserver une course.%0ADépart : %0ADestination : %0APassagers : %0ADate/Heure : '">📧 Email</button>
+  </div>
+  <div class="pad"></div>
+</div>
+
+<!-- AÉROPORT -->
+<div class="page" id="airport">
+  <div class="status"><span>09:24</span><span>🔋 87%</span></div>
+  <div class="header">
+    <button class="btn-back" onclick="goto('home')">←</button>
+    <div class="h-title">Transfert Aéroport</div>
+    <button class="h-icon">✈️</button>
+  </div>
+
+  <div class="notif">✅ Tarifs fixes préfectoraux 2026 — Prix garantis !</div>
+
+  <div class="form-area">
+    <div class="form-lbl">Choisissez votre destination</div>
+    <div class="forfait-grid">
+      <div class="forf-card sel" onclick="selForf(this,35,52)">
+        <div class="forf-dest">✈️ → Fort-de-France</div>
+        <div class="forf-price">35€</div>
+        <div class="forf-night">🌙 Nuit: 52€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,45,68)">
+        <div class="forf-dest">✈️ → Schoelcher</div>
+        <div class="forf-price">45€</div>
+        <div class="forf-night">🌙 Nuit: 68€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,55,82)">
+        <div class="forf-dest">✈️ → Nord Caraïbe</div>
+        <div class="forf-price">55€</div>
+        <div class="forf-night">🌙 Nuit: 82€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,25,37)">
+        <div class="forf-dest">✈️ → Lamentin</div>
+        <div class="forf-price">25€</div>
+        <div class="forf-night">🌙 Nuit: 37€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,60,90)">
+        <div class="forf-dest">✈️ → Sainte-Marie</div>
+        <div class="forf-price">60€</div>
+        <div class="forf-night">🌙 Nuit: 90€</div>
+      </div>
+      <div class="forf-card" onclick="selForf(this,65,98)">
+        <div class="forf-dest">✈️ → Le Robert</div>
+        <div class="forf-price">65€</div>
+        <div class="forf-night">🌙 Nuit: 98€</div>
+      </div>
+    </div>
+
+    <div class="form-lbl">Date & Heure de vol</div>
+    <div class="row2">
+      <input class="inp" type="date" style="padding-left:12px;">
+      <input class="inp" type="time" style="padding-left:12px;" value="09:00">
+    </div>
+
+    <div class="form-lbl">Passagers & Bagages</div>
+    <div class="row2">
+      <select class="inp" style="padding-left:12px;">
+        <option>1 passager</option>
+        <option>2 passagers</option>
+        <option>3 passagers</option>
+        <option>4 passagers</option>
+      </select>
+      <select class="inp" style="padding-left:12px;">
+        <option>0 bagage</option>
+        <option>1 bagage</option>
+        <option>2 bagages</option>
+        <option>3+ bagages</option>
+      </select>
+    </div>
+
+    <div class="price-box">
+      <div class="p-left">
+        <div class="p-lbl">Forfait sélectionné</div>
+        <div class="p-val" id="ap-price">35€</div>
+        <div class="p-sub">Prix fixe garanti</div>
+      </div>
+      <div class="p-right">
+        <div class="p-item">🌙 Nuit/Férié</div>
+        <div style="font-size:18px;font-weight:700;color:var(--gris);" id="ap-night">52€</div>
+      </div>
+    </div>
+
+    <button class="cta" onclick="window.open('https://wa.me/596696039329?text=%E2%9C%88%EF%B8%8F%20Bonjour%20Wana-Kera%20Taxi%20!%20Je%20souhaite%20r%C3%A9server%20un%20transfert%20a%C3%A9roport.%0A%F0%9F%93%85%20Date%2FHeure%20%3A%20%0A%F0%9F%91%A5%20Passagers%20%3A%20%0A%F0%9F%A7%B3%20Bagages%20%3A%20%0A%F0%9F%93%8D%20Destination%20%3A%20')">
+      ✈️ Réserver ce transfert
+    </button>
+    <button class="cta cta-wa" onclick="window.open('https://wa.me/596696039329?text=%F0%9F%9A%96%20Bonjour%20Wana-Kera%20Taxi%20!%20Je%20souhaite%20r%C3%A9server%20une%20course.%0A%F0%9F%93%8D%20D%C3%A9part%20%3A%20%0A%F0%9F%8F%81%20Destination%20%3A%20%0A%F0%9F%91%A5%20Passagers%20%3A%20%0A%F0%9F%93%85%20Date%2FHeure%20%3A%20')">💬 Confirmer par WhatsApp</button>
+  </div>
+  <div class="pad"></div>
+</div>
+
+<!-- EXCURSIONS -->
+<div class="page" id="excursions">
+  <div class="status"><span>09:24</span><span>🔋 87%</span></div>
+  <div class="header">
+    <button class="btn-back" onclick="goto('home')">←</button>
+    <div class="h-title">Excursions & Circuits</div>
+    <button class="h-icon">🔍</button>
+  </div>
+
+  <div class="exc-filter">
+    <div class="lang-pill on">Tous</div>
+    <div class="lang-pill">🌋 Nord Caraïbe</div>
+    <div class="lang-pill">🌊 Nord Atlantique</div>
+    <div class="lang-pill">🏙️ Centre</div>
+    <div class="lang-pill">🏖️ Sud</div>
+    <div class="lang-pill">🗺️ Tour île</div>
+  </div>
+
+  <div class="exc-list">
+
+    <div class="exc-card" onclick="alert('🌋 Réservation confirmée !\n\nMontagne Pelée & Saint-Pierre\n120€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-1">🌋<div class="exc-badge">🌋 Nord Caraïbe</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Montagne Pelée & Saint-Pierre</div>
+        <div class="exc-desc">Ruines volcaniques, Musée du Volcan, distilleries historiques. Une plongée dans l'histoire de la Martinique.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Demi-journée · 4h</div><div class="exc-stars">★★★★★ (48)</div></div>
+          <div class="exc-price">120€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🌊 Réservation confirmée !\n\nNord Sauvage · Grand-Rivière\n180€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-2">🌊<div class="exc-badge">🌊 Nord Atlantique</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Grand-Rivière & Anse Couleuvre</div>
+        <div class="exc-desc">Le bout du monde martiniquais. Falaises, mer turquoise, végétation tropicale luxuriante et villages de pêcheurs.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Journée · 8h</div><div class="exc-stars">★★★★★ (32)</div></div>
+          <div class="exc-price">180€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🏙️ Réservation confirmée !\n\nFort-de-France & Balata\n120€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-3">🏙️<div class="exc-badge">🏙️ Centre</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Fort-de-France & Jardin de Balata</div>
+        <div class="exc-desc">La Savane, Bibliothèque Schoelcher, marché couvert, et le magnifique jardin botanique de Balata.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Demi-journée · 5h</div><div class="exc-stars">★★★★☆ (55)</div></div>
+          <div class="exc-price">120€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🏖️ Réservation confirmée !\n\nPlages du Sud\n200€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-4">🏖️<div class="exc-badge">🏖️ Sud Martinique</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Les Salines & Rocher du Diamant</div>
+        <div class="exc-desc">Les plus belles plages de la Caraïbe. Sable blanc immaculé, eaux cristallines turquoise et vue sur le Diamant.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Journée · 8h</div><div class="exc-stars">★★★★★ (71)</div></div>
+          <div class="exc-price">200€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🗺️ Grand Tour réservé !\n\nTour complet de la Martinique\n350€ / groupe\n\nWana-Kera vous contact par WhatsApp')">
+      <div class="exc-img exc-img-5">🗺️<div class="exc-badge">⭐ Tour Complet</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Grand Tour de la Martinique</div>
+        <div class="exc-desc">Nord Caraïbe + Centre + Sud en une journée inoubliable. Le meilleur de l'île avec votre guide Wana-Kera.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ Journée complète · 10h</div><div class="exc-stars">★★★★★ (19)</div></div>
+          <div class="exc-price">350€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exc-card" onclick="alert('🎯 Demande envoyée !\n\nNous vous contacterons sous 2h\npour créer votre circuit sur mesure.')">
+      <div class="exc-img" style="background:linear-gradient(135deg,#0a001a,#180035);">🎯<div class="exc-badge">✨ Sur Mesure</div></div>
+      <div class="exc-body">
+        <div class="exc-title">Circuit Personnalisé</div>
+        <div class="exc-desc">Vous choisissez vos sites, votre durée, votre groupe. Devis gratuit sous 2h par WhatsApp.</div>
+        <div class="exc-meta">
+          <div><div class="exc-dur">⏱️ À définir ensemble</div><div class="exc-stars">⭐ Sur devis</div></div>
+          <div class="exc-price" style="font-size:14px;">Devis →</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pad"></div>
+  </div>
+</div>
+
+<!-- COMPTE -->
+<div class="page" id="account">
+  <div class="status"><span>09:24</span><span>🔋 87%</span></div>
+  <div class="header">
+    <button class="btn-back" onclick="goto('home')">←</button>
+    <div class="h-title">Mon Compte</div>
+    <button class="h-icon">✏️</button>
+  </div>
+
+  <div class="profile-top">
+    <div class="avatar-big">👤</div>
+    <div class="prof-name">Mon Profil</div>
+    <div class="prof-tel">+596 6XX XX XX XX</div>
+    <div class="stats">
+      <div class="stat"><div class="stat-n">12</div><div class="stat-l">Courses</div></div>
+      <div class="stat"><div class="stat-n">3</div><div class="stat-l">Excursions</div></div>
+      <div class="stat"><div class="stat-n">4.9⭐</div><div class="stat-l">Note</div></div>
+    </div>
+  </div>
+
+  <div class="menu-list">
+    <div class="menu-row" onclick="alert('📋 Historique de vos 12 courses')">
+      <div class="menu-ico">📋</div>
+      <div class="menu-txt"><div class="menu-ttl">Historique des courses</div><div class="menu-sub">12 courses · 3 excursions</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('🧾 Factures téléchargeables en PDF')">
+      <div class="menu-ico">🧾</div>
+      <div class="menu-txt"><div class="menu-ttl">Mes factures</div><div class="menu-sub">Télécharger en PDF</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('💳 CB · PayPal · Espèces')">
+      <div class="menu-ico">💳</div>
+      <div class="menu-txt"><div class="menu-ttl">Paiement</div><div class="menu-sub">CB · PayPal · Espèces</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('🌍 Français · English · Español')">
+      <div class="menu-ico">🌍</div>
+      <div class="menu-txt"><div class="menu-ttl">Langue</div><div class="menu-sub">Français · English · Español</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('📞 +596 696 039 329\n💬 WhatsApp disponible 7j/7\n📧 contact@wanakera.mq')">
+      <div class="menu-ico">📞</div>
+      <div class="menu-txt"><div class="menu-ttl">Nous contacter</div><div class="menu-sub">Tél · WhatsApp · Email</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('📜 Conditions générales\nPolitique de confidentialité\nLicence Taxi — Préfecture Martinique')">
+      <div class="menu-ico">📜</div>
+      <div class="menu-txt"><div class="menu-ttl">CGV & Confidentialité</div><div class="menu-sub">Licence taxi · Préfecture</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+    <div class="menu-row" onclick="alert('🚨 URGENCES\n15 · SAMU\n17 · Police\n18 · Pompiers\n\nWana-Kera: +596 696 039 329')">
+      <div class="menu-ico red">🚨</div>
+      <div class="menu-txt"><div class="menu-ttl" style="color:var(--rouge)">Urgences</div><div class="menu-sub">15 · 17 · 18</div></div>
+      <div class="menu-arr">›</div>
+    </div>
+  </div>
+
+  <div style="padding:0 16px 20px;">
+    <div style="background:linear-gradient(135deg,rgba(232,160,32,0.08),rgba(232,160,32,0.03));border:1px solid rgba(232,160,32,0.15);border-radius:16px;padding:16px;text-align:center;">
+      <div style="font-size:22px;margin-bottom:6px;">🏝️</div>
+      <div style="font-size:13px;font-weight:700;color:var(--blanc);">Wana-Kera Taxi</div>
+      <div style="font-size:11px;color:var(--gris);margin-top:4px;">Martinique · Nord Caraïbe · Depuis 2026</div>
+      <div style="font-size:11px;color:var(--or);margin-top:3px;">Licence Taxi — Préfecture de Martinique</div>
+    </div>
+  </div>
+</div>
+
+</div><!-- screen -->
+</div><!-- phone -->
+
+<script>
+let cur = 'splash';
+
+function goto(id) {
+  const prev = document.getElementById(cur);
+  const next = document.getElementById(id);
+  if (cur === id) return;
+  prev.classList.add('prev');
+  next.classList.add('active');
+  setTimeout(() => {
+    prev.classList.remove('active','prev');
+  }, 350);
+  cur = id;
+  next.scrollTop = 0;
+}
+
+// Clock
+function tick() {
+  const t = new Date().toTimeString().slice(0,5);
+  document.querySelectorAll('.status span:first-child').forEach(e => e.textContent = t);
+  document.getElementById('clk') && (document.getElementById('clk').textContent = t);
+}
+tick();
+setInterval(tick, 30000);
+
+// Tarif auto
+function tarifAuto() {
+  const h = new Date().getHours();
+  const nuit = h >= 19 || h < 7;
+  const live = document.getElementById('tarif-live');
+  const pill = document.getElementById('tarif-pill');
+  const txt = document.getElementById('tarif-txt');
+  if (nuit) {
+    live && (live.textContent = '🌙 Tarif B Nuit — 1,69€/km · Min. 8€');
+    pill && (pill.textContent = '🌙 Tarif B');
+    txt && (txt.textContent = 'Tarif Nuit B');
+  } else {
+    live && (live.textContent = '🌞 Tarif A: 1,30€/km · 🌙 Tarif B Nuit: +50% · Min. 8€');
+    pill && (pill.textContent = '🌞 Tarif A');
+    txt && (txt.textContent = 'Tarif Jour A');
+  }
+}
+tarifAuto();
+
+// Mode tarif
+let mode = 'jour';
+function setMode(m) {
+  mode = m;
+  document.getElementById('t-jour').classList.toggle('on', m==='jour');
+  document.getElementById('t-nuit').classList.toggle('on', m==='nuit');
+  const pt = document.getElementById('p-type');
+  if (pt) pt.textContent = m==='jour' ? '🌞 Tarif A — 1,24€/km' : '🌙 Tarif B — 1,69€/km';
+  calcP();
+}
+
+function calcP() {
+  const d = document.getElementById('dep')?.value;
+  const ds = document.getElementById('dest')?.value;
+  const pv = document.getElementById('p-val');
+  const ps = document.getElementById('p-sub');
+  if (!pv) return;
+  if (!d || !ds) { pv.textContent='8€'; ps && (ps.textContent='Tarif minimum légal'); return; }
+  const km = Math.floor(Math.random()*18)+4;
+  const rate = mode==='nuit' ? 1.69 : 1.24;
+  const price = Math.max(8, 3.09 + km*rate);
+  pv.textContent = Math.round(price) + '€';
+  ps && (ps.textContent = `~${km} km · ${rate}€/km`);
+}
+
+function selForf(el, p, n) {
+  document.querySelectorAll('.forf-card').forEach(c => c.classList.remove('sel'));
+  el.classList.add('sel');
+  const ap = document.getElementById('ap-price');
+  const an = document.getElementById('ap-night');
+  if (ap) ap.textContent = p + '€';
+  if (an) an.textContent = n + '€';
+}
+
+function commanderCourse() {
+  var dep = document.getElementById('dep') ? document.getElementById('dep').value : '';
+  var dest = document.getElementById('dest') ? document.getElementById('dest').value : '';
+  var pax = document.getElementById('pax') ? document.getElementById('pax').value : '1 passager';
+  var msg = '🚖 Bonjour Wana-Kera Taxi !%0AJe souhaite commander une course.%0A%0A📍 Départ : ' + encodeURIComponent(dep) + '%0A🏁 Destination : ' + encodeURIComponent(dest) + '%0A👥 ' + encodeURIComponent(pax) + '%0A📅 Date/Heure : ';
+  window.open('https://wa.me/596696039329?text=' + msg);
 }
 </script>
 </body>
