@@ -423,15 +423,6 @@ option { background: #161E30; }
       </div>
       <div class="svc-arr">›</div>
     </div>
-
-    <div class="svc-card" onclick="goto('parrainage')" style="background:linear-gradient(135deg,#161E30,rgba(232,160,32,0.08));border:1px solid rgba(232,160,32,0.15);">
-      <div class="svc-icon">🎁</div>
-      <div class="svc-info">
-        <div class="svc-name" style="color:#E8A020;">Parrainage & Fidélité</div>
-        <div class="svc-desc">Parrainez · Gagnez des crédits</div>
-      </div>
-      <div class="svc-arr">›</div>
-    </div>
   </div>
 
   <div style="padding:16px;">
@@ -478,6 +469,9 @@ option { background: #161E30; }
   </div>
 
   <div class="form-area">
+    <input class="inp" type="text" placeholder="👤 Nom" id="nom">
+    <input class="inp" type="text" placeholder="👤 Prénom" id="prenom">
+    <input class="inp" type="tel" placeholder="📞 Numéro de téléphone" id="phone">
     <input class="inp" type="text" placeholder="📍 Adresse exacte de départ" id="dep" oninput="calcP()">
     <input class="inp" type="text" placeholder="🏁 Adresse exacte de destination" id="dest" oninput="calcP()">
     <select class="inp" id="pax">
@@ -487,8 +481,7 @@ option { background: #161E30; }
       <option>4 passagers</option>
       <option>5 passagers (+4€)</option>
     </select>
-    <input class="inp" type="datetime-local" id="datetime" placeholder="📅 Date et heure">
-    <input class="inp" type="tel" id="phone" placeholder="📞 Votre numéro de téléphone">
+    <input class="inp" type="datetime-local" id="datetime">
     <input class="inp" type="text" id="msg_extra" placeholder="💬 Message (optionnel)">
 
     <div class="price-box">
@@ -800,28 +793,35 @@ function calcP() {
 }
 
 function commanderCourse() {
+  var nom = document.getElementById('nom')?.value || '';
+  var prenom = document.getElementById('prenom')?.value || '';
+  var phone = document.getElementById('phone')?.value || '';
   var dep = document.getElementById('dep')?.value || '';
   var dest = document.getElementById('dest')?.value || '';
   var pax = document.getElementById('pax')?.value || '1 passager';
   var dt = document.getElementById('datetime')?.value || '';
-  var phone = document.getElementById('phone')?.value || '';
   var extra = document.getElementById('msg_extra')?.value || '';
   
-  if (!dep || !dest) {
-    alert('⚠️ Veuillez renseigner le point de départ et la destination !');
+  if (!nom || !prenom) {
+    alert('⚠️ Veuillez renseigner votre nom et prénom !');
     return;
   }
   if (!phone) {
     alert('⚠️ Veuillez renseigner votre numéro de téléphone !');
     return;
   }
+  if (!dep || !dest) {
+    alert('⚠️ Veuillez renseigner le point de départ et la destination !');
+    return;
+  }
   
   var msg = '🚖 NOUVELLE COURSE WANA-KERA !%0A%0A' +
+    '👤 Client : ' + encodeURIComponent(prenom + ' ' + nom) + '%0A' +
+    '📞 Téléphone : ' + encodeURIComponent(phone) + '%0A' +
     '📍 Départ : ' + encodeURIComponent(dep) + '%0A' +
     '🏁 Destination : ' + encodeURIComponent(dest) + '%0A' +
     '👥 Passagers : ' + encodeURIComponent(pax) + '%0A' +
     '📅 Date/Heure : ' + encodeURIComponent(dt) + '%0A' +
-    '📞 Téléphone : ' + encodeURIComponent(phone) + '%0A' +
     '💬 Message : ' + encodeURIComponent(extra);
   window.open('https://wa.me/596696039329?text=' + msg);
 }
